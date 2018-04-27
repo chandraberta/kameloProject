@@ -12,9 +12,9 @@
         <meta name="author" content="Bootstrap Temple">
 
         <!-- Page Title -->
-        <title>Italiano Restaurant - Bootstrap Template from the Bootstrap Temple</title>
+        <title>Kamelo - Marshmallow dan Es Krim</title>
         <!-- Favicon -->
-        <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="shortcut icon" href="assets/img/favicon.ico">
 
         <!-- Bootstrap -->
         <link rel="stylesheet" href="<?php  echo base_url('assets/css/style.css')?>"/>
@@ -38,7 +38,7 @@
         <!-- Custom CSS -->
         <link rel="stylesheet" href="<?php echo base_url('assets/css/style.default.css')?>"/>
         <!-- Modernizr -->
-        <script type="text/javascript" src="<?php echo base_url('js/modernizr.custom.79639.min.js')?>"></script>
+        <script type="text/javascript" src="<?php echo base_url('assets/js/modernizr.custom.79639.min.js')?>"></script>
     </head>
     <body>
 
@@ -55,15 +55,15 @@
                         <div id="navigation" class="collapse navbar-collapse navbar-right">
                             <ul class="nav navbar-nav">
                                 <li class="active"><a href="#hero">Home</a></li>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#services">Services</a></li>
-                                <li><a href="#dishes">Dishes</a></li>
+                                <li><a href="#about">Tentang</a></li>
+                                <li><a href="#services">Produk</a></li>
+                                <li><a href="#dishes">Menu1</a></li>
                                 <li><a href="#menu">Menu</a></li>
-                                <li><a href="#gallery">Gallery</a></li>
-                                <li><a href="#booking">Reservation</a></li>
-                                <li><a href="#contact">Contact</a></li>
+                                <li><a href="#gallery">Galeri</a></li>
+                                <li><a href="#booking">Pesan</a></li>
+                                <li><a href="#contact">Kontak</a></li>
                             </ul>
-                            <a href="#" class="btn navbar-btn btn-unique hidden-sm hidden-xs" id="open-reservation">Make a Reservation</a>
+                            <a href="#" class="btn navbar-btn btn-unique hidden-sm hidden-xs" id="open-reservation">Buat Pesanan</a>
                         </div>
                     </div>
                 </nav>
@@ -78,30 +78,30 @@
                     <div class="sl-slider">
                         <!-- slide -->
                         <div class="sl-slide bg-1" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
-                            <div class="sl-slide-inner" style="background-image: url(assets/img/hero-bg.jpg);">
+                            <div class="sl-slide-inner" style="background-image: url('assets/img/hero-bg.jpg');">
                                 <div class="container">
-                                    <h2>This is <span class="text-primary">Italiano restaurant</span></h2>
-                                    <h1>Bootstrap Template</h1>
-                                    <p>An elegant Bootstrap template brought to you by <a href="<?php echo ('https://bootstraptemple.com/')?>" target="_blank">Bootstrap Temple</a>.</p>
+                                    <h2>Marshmallow <span class="text-primary">dan Es Krim</span></h2>
+                                    <h1>Kamelo</h1>
+                                    <p>Es Krim dan Marshmallow buat kamu <a href="<?php echo ('https://bootstraptemple.com/')?>" target="_blank">Bootstrap Temple</a>.</p>
                                 </div>
                             </div>
                         </div>
                         <!-- slide -->
                         <div class="sl-slide bg-2" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
-                            <div class="sl-slide-inner" style="background-image: url(img/hero-bg02.jpg);">
+                            <div class="sl-slide-inner" style="background-image: url('assets/img/hero-bg02.jpg');">
                                 <div class="container">
-                                    <h1>lorem ipsum dolor sit amit</h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    <h1>Es Krim dan Marshmallow</h1>
+                                    <p>Nikmat, manis menyegarkan.</p>
                                 </div>
                             </div>
                         </div>
                         <!-- slide -->
                         <div class="sl-slide bg-3" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
-                            <div class="sl-slide-inner" style="background-image: url(img/hero-bg03.jpg);">
+                            <div class="sl-slide-inner" style="background-image: url('assets/img/hero-bg03.jpg');">
                                 <div class="container">
-                                    <h2>Visit <span class="text-primary">italiano restaurant</span></h2>
-                                    <h1>lorem ipsum dolor sit amit</h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    <h2>Kunjungi <span class="text-primary">kedai kami</span></h2>
+                                    <h1>Pengen yang manis dan lumer di mulut?</h1>
+                                    <p>Kamelo solusimu.</p>
                                 </div>
                             </div>
                         </div>
@@ -126,7 +126,7 @@
                                 <li><a href="#" title="pinterest" target="_blank"><i class="fa fa-pinterest"></i></a></li>
                                 <li><a href="#" title="instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
                             </ul>
-                            <span>Follow us on</span>
+                            <span>Follow kami</span>
                         </div>
                     </div>
                 </div><!-- End slider-wrapper -->
@@ -140,8 +140,8 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="heading text-center">
-                                <p>Call Us Now For</p>
-                                <h5>Home Delivery</h5>
+                                <p>Hubungi kami untu</p>
+                                <h5>Delivery dalam kota</h5>
                             </div>
                             <a href="tel:9870988764" class="phone">987 098 8764</a>
                         </div>
@@ -163,8 +163,8 @@
             <section id="about" class="about">
                 <div class="container text-center">
                     <header>
-                        <h2>About Restaurant</h2>
-                        <h3>Check our story</h3>
+                        <h2>Tentang Kamelo</h2>
+                        <h3>Sekilas info</h3>
                     </header>
                     <p class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur</p>
                 </div>
@@ -176,7 +176,7 @@
             <section id="services" class="services">
                 <div class="container text-center">
                     <header>
-                        <h2>We provide the following</h2>
+                        <h2>Yang ada di Kamelo</h2>
                         <h3>Our Specialities</h3>
                     </header>
 
@@ -246,7 +246,7 @@
                         <!-- item -->
                         <div class="dish">
                             <div class="profile">
-                                <img src="img/dish-c.png" class="img-responsive" alt="dish name">
+                                <img src="assets/img/dish-c.png" class="img-responsive" alt="dish name">
                                 <div class="price">
                                     <span>17$</span>
                                 </div>
@@ -260,7 +260,7 @@
                         <!-- item -->
                         <div class="dish">
                             <div class="profile">
-                                <img src="img/dish-b.png" class="img-responsive" alt="dish name">
+                                <img src="assets/img/dish-b.png" class="img-responsive" alt="dish name">
                                 <div class="price">
                                     <span>17$</span>
                                 </div>
@@ -274,7 +274,7 @@
                         <!-- item -->
                         <div class="dish">
                             <div class="profile">
-                                <img src="img/dish-a.png" class="img-responsive" alt="dish name">
+                                <img src="assets/img/dish-a.png" class="img-responsive" alt="dish name">
                                 <div class="price">
                                     <span>17$</span>
                                 </div>
@@ -288,7 +288,7 @@
                         <!-- item -->
                         <div class="dish">
                             <div class="profile">
-                                <img src="img/dish-c.png" class="img-responsive" alt="dish name">
+                                <img src="assets/img/dish-c.png" class="img-responsive" alt="dish name">
                                 <div class="price">
                                     <span>17$</span>
                                 </div>
@@ -302,7 +302,7 @@
                         <!-- item -->
                         <div class="dish">
                             <div class="profile">
-                                <img src="img/dish-b.png" class="img-responsive" alt="dish name">
+                                <img src="assets/img/dish-b.png" class="img-responsive" alt="dish name">
                                 <div class="price">
                                     <span>17$</span>
                                 </div>
@@ -316,7 +316,7 @@
                         <!-- item -->
                         <div class="dish">
                             <div class="profile">
-                                <img src="img/dish-a.png" class="img-responsive" alt="dish name">
+                                <img src="assets/img/dish-a.png" class="img-responsive" alt="dish name">
                                 <div class="price">
                                     <span>17$</span>
                                 </div>
@@ -348,7 +348,7 @@
                                     <span>40% <br> Off</span>
                                 </div>
                                 <div class="profile">
-                                    <img src="img/dish-d.png" alt="dish name" class="img-responsive">
+                                    <img src="assets/img/dish-d.png" alt="dish name" class="img-responsive">
                                 </div>
                                 <div class="text">
                                     <h4>Dish Name</h4>
@@ -364,7 +364,7 @@
                                     <span>40% <br> Off</span>
                                 </div>
                                 <div class="profile">
-                                    <img src="img/dish-d.png" alt="dish name" class="img-responsive">
+                                    <img src="assets/img/dish-d.png" alt="dish name" class="img-responsive">
                                 </div>
                                 <div class="text">
                                     <h4>Dish Name</h4>
@@ -380,7 +380,7 @@
                                     <span>40% <br> Off</span>
                                 </div>
                                 <div class="profile">
-                                    <img src="img/dish-d.png" alt="dish name" class="img-responsive">
+                                    <img src="assets/img/dish-d.png" alt="dish name" class="img-responsive">
                                 </div>
                                 <div class="text">
                                     <h4>Dish Name</h4>
@@ -1104,7 +1104,7 @@
                     <div class="row">
                         <!-- Profile Side  -->
                         <div class="col-sm-6">
-                            <div class="profile has-border" style="background-image: url(img/event-bg.jpg);">
+                            <div class="profile has-border" style="background-image: url('assets/img/event-bg.jpg');">
                                 <ul class="date list-unstyled list-inline clearfix">
                                     <li class="day pull-left">15<sup>th</sup></li>
                                     <li class="month pull-left">December <span>2016</span></li>
@@ -1140,8 +1140,8 @@
                             <!-- Item -->
                             <div class="col-md-3 col-sm-4 col-xs-6 col-xs-6 col-custom-12">
                                 <div class="item">
-                                    <img src="img/bg01-small.jpg" alt="image">
-                                    <a href="img/bg01.jpg" data-lightbox="image-1" data-title="Image Caption" class="has-border">
+                                    <img src="assets/img/bg01-small.jpg" alt="image">
+                                    <a href="assets/img/bg01.jpg" data-lightbox="image-1" data-title="Image Caption" class="has-border">
                                         <span class="icon-search"></span>
                                     </a>
                                 </div>
@@ -1149,8 +1149,8 @@
                             <!-- Item -->
                             <div class="col-md-3 col-sm-4 col-xs-6 col-custom-12">
                                 <div class="item">
-                                    <img src="img/bg02-small.jpg" alt="image">
-                                    <a href="img/bg02.jpg" data-lightbox="image-1" data-title="Image Caption" class="has-border">
+                                    <img src="assets/img/bg02-small.jpg" alt="image">
+                                    <a href="assets/img/bg02.jpg" data-lightbox="image-1" data-title="Image Caption" class="has-border">
                                         <span class="icon-search"></span>
                                     </a>
                                 </div>
@@ -1158,8 +1158,8 @@
                             <!-- Item -->
                             <div class="col-md-3 col-sm-4 col-xs-6 col-custom-12">
                                 <div class="item">
-                                    <img src="img/bg03-small.jpg" alt="image">
-                                    <a href="img/bg03.jpg" data-lightbox="image-1" data-title="Image Caption" class="has-border">
+                                    <img src="assets/img/bg03-small.jpg" alt="image">
+                                    <a href="assets/img/bg03.jpg" data-lightbox="image-1" data-title="Image Caption" class="has-border">
                                         <span class="icon-search"></span>
                                     </a>
                                 </div>
@@ -1167,8 +1167,8 @@
                             <!-- Item -->
                             <div class="col-md-3 col-sm-4 col-xs-6 col-custom-12">
                                 <div class="item">
-                                    <img src="img/bg-small.jpg" alt="image">
-                                    <a href="img/bg.jpg" data-lightbox="image-1" data-title="Image Caption" class="has-border">
+                                    <img src="assets/img/bg-small.jpg" alt="image">
+                                    <a href="assets/img/bg.jpg" data-lightbox="image-1" data-title="Image Caption" class="has-border">
                                         <span class="icon-search"></span>
                                     </a>
                                 </div>
@@ -1176,8 +1176,8 @@
                             <!-- Item -->
                             <div class="col-md-3 col-sm-4 col-xs-6 col-custom-12">
                                 <div class="item">
-                                    <img src="img/bg05-small.jpg" alt="image">
-                                    <a href="img/bg05.jpg" data-lightbox="image-1" data-title="Image Caption" class="has-border">
+                                    <img src="assets/img/bg05-small.jpg" alt="image">
+                                    <a href="assets/img/bg05.jpg" data-lightbox="image-1" data-title="Image Caption" class="has-border">
                                         <span class="icon-search"></span>
                                     </a>
                                 </div>
@@ -1185,8 +1185,8 @@
                             <!-- Item -->
                             <div class="col-md-3 col-sm-4 col-xs-6 col-custom-12">
                                 <div class="item">
-                                    <img src="img/bg06-small.jpg" alt="image">
-                                    <a href="img/bg06.jpg" data-lightbox="image-1" data-title="Image Caption" class="has-border">
+                                    <img src="assets/img/bg06-small.jpg" alt="image">
+                                    <a href="assets/img/bg06.jpg" data-lightbox="image-1" data-title="Image Caption" class="has-border">
                                         <span class="icon-search"></span>
                                     </a>
                                 </div>
@@ -1194,8 +1194,8 @@
                             <!-- Item -->
                             <div class="col-md-3 col-sm-4 col-xs-6 col-custom-12">
                                 <div class="item">
-                                    <img src="img/bg04-small.jpg" alt="image">
-                                    <a href="img/bg04.jpg" data-lightbox="image-1" data-title="Image Caption" class="has-border">
+                                    <img src="assets/img/bg04-small.jpg" alt="image">
+                                    <a href="assets/img/bg04.jpg" data-lightbox="image-1" data-title="Image Caption" class="has-border">
                                         <span class="icon-search"></span>
                                     </a>
                                 </div>
@@ -1203,8 +1203,8 @@
                             <!-- Item -->
                             <div class="col-md-3 col-sm-4 col-xs-6 col-custom-12">
                                 <div class="item">
-                                    <img src="img/bg07-small.jpg" alt="image">
-                                    <a href="img/bg07.jpg" data-lightbox="image-1" data-title="Image Caption" class="has-border">
+                                    <img src="assets/img/bg07-small.jpg" alt="image">
+                                    <a href="assets/img/bg07.jpg" data-lightbox="image-1" data-title="Image Caption" class="has-border">
                                         <span class="icon-search"></span>
                                     </a>
                                 </div>
@@ -1310,7 +1310,7 @@
                     <div class="row">
                         <div class="col-md-4 brief">
                             <div class="header">
-                                <img src="img/logo-footer.png" alt="italiano" width="100">
+                                <img src="assets/img/logo-footer.png" alt="italiano" width="100">
                             </div>
                             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
                         </div>
@@ -1429,18 +1429,18 @@
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.ba-cond.min.js"></script>
-        <script src="js/jquery.slitslider.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/lightbox.min.js"></script>
-        <script src="js/datepicker.min.js"></script>
-        <script src="js/datepicker.en.min.js"></script>
-        <script src="js/timepicki.min.js"></script>
-        <script src="js/jquery.validate.min.js"></script>
-        <script src="js/smooth.scroll.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.ba-cond.min.js"></script>
+        <script src="assets/js/jquery.slitslider.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/lightbox.min.js"></script>
+        <script src="assets/js/datepicker.min.js"></script>
+        <script src="assets/js/datepicker.en.min.js"></script>
+        <script src="assets/js/timepicki.min.js"></script>
+        <script src="assets/js/jquery.validate.min.js"></script>
+        <script src="assets/js/smooth.scroll.min.js"></script>
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0dSWcBx-VghzhzQB6oCMTgeXMOhCYTvk"></script>
-        <script src="js/map.min.js"></script>
-        <script src="js/script.js"></script>
+        <script src="assets/js/map.min.js"></script>
+        <script src="assets/js/script.js"></script>
     </body>
 </html>
