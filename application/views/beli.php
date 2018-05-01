@@ -47,7 +47,7 @@
             <header class="header">
                 <nav class="navbar navbar-default navbar-fixed-top">
                     <div class="container">
-                        <div class="navbar-header"><a href="index.html" class="navbar-brand"><img src="<?php echo base_url('assets/img/logo.png')?>" alt="Italiano" width="100"></a>
+                        <div class="navbar-header"><a href="http://localhost/kamelo/" class="navbar-brand"><img src="<?php echo base_url('assets/img/logo1.jpg')?>" alt="Italiano" width="100"></a>
                             <div class="navbar-buttons">
                                 <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle navbar-btn">Menu<i class="fa fa-align-justify"></i></button>
                             </div>
@@ -78,17 +78,17 @@
                     <div class="sl-slider">
                         <!-- slide -->
                         <div class="sl-slide bg-1" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
-                            <div class="sl-slide-inner" style="background-image: url('assets/img/hero-bg.jpg');">
+                            <div class="sl-slide-inner" style="background-image: url('assets/img/awal1.jpg');">
                                 <div class="container">
-                                    <h2>Marshmallow <span class="text-primary">dan Es Krim</span></h2>
+                                    <h2>Your Sweet <span class="text-primary">Little Things</span></h2>
                                     <h1>Kamelo</h1>
-                                    <p>Es Krim dan Marshmallow buat kamu <a href="<?php echo ('https://bootstraptemple.com/')?>" target="_blank">Bootstrap Temple</a>.</p>
+                                    <p>Marshmallow Ice Cream</p>
                                 </div>
                             </div>
                         </div>
                         <!-- slide -->
                         <div class="sl-slide bg-2" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
-                            <div class="sl-slide-inner" style="background-image: url('assets/img/hero-bg02.jpg');">
+                            <div class="sl-slide-inner" style="background-image: url('assets/img/awal2.jpg');">
                                 <div class="container">
                                     <h1>Es Krim dan Marshmallow</h1>
                                     <p>Nikmat, manis menyegarkan.</p>
@@ -97,9 +97,9 @@
                         </div>
                         <!-- slide -->
                         <div class="sl-slide bg-3" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
-                            <div class="sl-slide-inner" style="background-image: url('assets/img/hero-bg03.jpg');">
+                            <div class="sl-slide-inner" style="background-image: url('assets/img/awal3.jpg');">
                                 <div class="container">
-                                    <h2>Kunjungi <span class="text-primary">kedai kami</span></h2>
+                                    <h2>Ayo <span class="text-primary">pesan sekarang!</span></h2>
                                     <h1>Pengen yang manis dan lumer di mulut?</h1>
                                     <p>Kamelo solusimu.</p>
                                 </div>
@@ -122,9 +122,7 @@
                         <div class="wrapper">
                             <ul class="list-unstyled">
                                 <li><a href="#" title="facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#" title="twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#" title="pinterest" target="_blank"><i class="fa fa-pinterest"></i></a></li>
-                                <li><a href="#" title="instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="https://www.instagram.com/kameloku/" title="instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
                             </ul>
                             <span>Follow kami</span>
                         </div>
@@ -164,9 +162,9 @@
                 <div class="container text-center">
                     <header>
                         <h2>Tentang Kamelo</h2>
-                        <h3>Sekilas info</h3>
+                        <h3>"Your Sweet Little Things"</h3>
                     </header>
-                    <p class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur</p>
+                    <p class="lead">Kamelo adalah kedai dessert kekinian dengan produk unggulan Marshmallow Ice Cream yang hadir pertama kali di Kediri.</p>
                 </div>
             </section>
             <!-- End About Section -->
@@ -182,37 +180,29 @@
 
                     <div class="row">
                         <!-- item -->
-                        <div class="col-sm-4 service">
+                        <div class="col-sm-6 service">
                             <div class="icon">
                                 <i class="icon-like"></i>
                             </div>
                             <div class="text">
-                                <h4>Clean Environment</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                                <h4>Marshmallow</h4>
+                                <p>Marshmallow lembut, enak, gurih, murah, dan pas di hati.</p>
                             </div>
                         </div>
 
                         <!-- item -->
-                        <div class="col-sm-4 service">
+                        <div class="col-sm-6 service">
                             <div class="icon">
                                 <i class="icon-hat"></i>
                             </div>
                             <div class="text">
-                                <h4>Lovely &amp; expert chefs</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                                <h4>Es Krim</h4>
+                                <p>Es krim dingin menyegarkan, dan membuat harimu cerah kembali. Dihiasi topping yang bisa dipilih sesuka hati.</p>
                             </div>
                         </div>
 
                         <!-- item -->
-                        <div class="col-sm-4 service">
-                            <div class="icon">
-                                <i class="icon-plate"></i>
-                            </div>
-                            <div class="text">
-                                <h4>Fresh and tasty food</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </section>
