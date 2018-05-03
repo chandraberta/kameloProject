@@ -90,7 +90,7 @@
                         <div class="sl-slide bg-2" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
                             <div class="sl-slide-inner" style="background-image: url('assets/img/awal2.jpg');">
                                 <div class="container">
-                                    <h1>Es Krim dan Marshmallow</h1>
+                                    <h1>Es Krim Marshmallow</h1>
                                     <p>Nikmat, manis menyegarkan.</p>
                                 </div>
                             </div>
