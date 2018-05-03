@@ -12,7 +12,7 @@
         <meta name="author" content="Bootstrap Temple">
 
         <!-- Page Title -->
-        <title>Kamelo - Marshmallow dan Es Krim</title>
+        <title>Kamelo - Marshmallow Es Krim</title>
         <!-- Favicon -->
         <link rel="shortcut icon" href="assets/img/favicon.ico">
 
@@ -162,7 +162,7 @@
                 <div class="container text-center">
                     <header>
                         <h2>Tentang Kamelo</h2>
-                        <h3>"Your Sweet Little Things"</h3>
+                        <h3>"Your Sweet Little Things Called Love"</h3>
                     </header>
                     <p class="lead">Kamelo adalah kedai dessert kekinian dengan produk unggulan Marshmallow Ice Cream yang hadir pertama kali di Kediri.</p>
                 </div>
