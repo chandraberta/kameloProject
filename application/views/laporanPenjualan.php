@@ -64,7 +64,7 @@
       </ol>
       <h1>Ini Laporan penjualan</h1>
       <hr>
-      <p>The SB Admin navbar can be either fixed or static, and it supports the navbar-light and navbar-dark Bootstrap 4 classes.</p>
+      <p>Ini yang tak rubah yaaaaa... Meli ibunya kuciinggg</p>
       <a class="btn btn-primary" href="#" id="toggleNavPosition">Toggle Fixed/Static Navbar</a>
       <a class="btn btn-primary" href="#" id="toggleNavColor">Toggle Navbar Color</a>
       <!-- Blank div to give the page height to preview the fixed vs. static navbar-->
