@@ -162,7 +162,7 @@
                 <div class="container text-center">
                     <header>
                         <h2>Tentang Kamelo</h2>
-                        <h3>"Your Sweet Little Things Called Love"</h3>
+                        <h3>"Your Sweet Little Things"</h3>
                     </header>
                     <p class="lead">Kamelo adalah kedai dessert kekinian dengan produk unggulan Marshmallow Ice Cream yang hadir pertama kali di Kediri.</p>
                 </div>
