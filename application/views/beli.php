@@ -138,10 +138,10 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="heading text-center">
-                                <p>Hubungi kami untu</p>
+                                <p>Hubungi kami untuk</p>
                                 <h5>Delivery dalam kota</h5>
                             </div>
-                            <a href="tel:9870988764" class="phone">987 098 8764</a>
+                            <a href="tel:9870988764" class="phone">0819</a>
                         </div>
 
                         <div class="col-sm-6">
