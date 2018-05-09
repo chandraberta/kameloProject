@@ -12,9 +12,9 @@
         <meta name="author" content="Bootstrap Temple">
 
         <!-- Page Title -->
-        <title>Kamelo - Marshmallow Es Krim</title>
+        <title>Kamelo - Marshmallow Ice Cream</title>
         <!-- Favicon -->
-        <link rel="shortcut icon" href="assets/img/favicon.ico">
+        <link rel="shortcut icon" href="assets/img/favicon.png">
 
         <!-- Bootstrap -->
         <link rel="stylesheet" href="<?php  echo base_url('assets/css/style.css')?>"/>
@@ -47,7 +47,7 @@
             <header class="header">
                 <nav class="navbar navbar-default navbar-fixed-top">
                     <div class="container">
-                        <div class="navbar-header"><a href="http://localhost/kamelo/" class="navbar-brand"><img src="<?php echo base_url('assets/img/logo1.jpg')?>" alt="Italiano" width="100"></a>
+                        <div class="navbar-header"><a href="http://localhost/kamelo/" class="navbar-brand"><img src="<?php echo base_url('assets/img/logo1.png')?>" alt="Italiano" width="200"></a>
                             <div class="navbar-buttons">
                                 <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle navbar-btn">Menu<i class="fa fa-align-justify"></i></button>
                             </div>
@@ -57,7 +57,7 @@
                                 <li class="active"><a href="#hero">Home</a></li>
                                 <li><a href="#about">Tentang</a></li>
                                 <li><a href="#services">Produk</a></li>
-                                <li><a href="#dishes">Menu1</a></li>
+                                <li><a href="#dishes">Dessert</a></li>
                                 <li><a href="#menu">Menu</a></li>
                                 <li><a href="#gallery">Galeri</a></li>
                                 <li><a href="#booking">Pesan</a></li>
@@ -165,6 +165,7 @@
                         <h3>"Your Sweet Little Things"</h3>
                     </header>
                     <p class="lead">Kamelo adalah kedai dessert kekinian dengan produk unggulan Es Krim Marshmellow yang hadir pertama kali di Kediri.</p>
+                    <p class="lead">Rasa manis marshmallow diiisi dinginnya es krim, disajikan dengan cara dibakar sehingga akan lumer dan meleleh di mulut. So what do you waiting for ? You have to try now !!</p>
                 </div>
             </section>
             <!-- End About Section -->
@@ -185,8 +186,8 @@
                                 <i class="icon-like"></i>
                             </div>
                             <div class="text">
-                                <h4>Marshmallow</h4>
-                                <p>Marshmallow lembut, enak, gurih, murah, dan pas di hati.</p>
+                                <h4>Marshmallow Es Krim</h4>
+                                <p>Marshmallow lembut, enak, gurih, murah, dan pas di hati. Dengan isi es krim yang manis.</p>
                             </div>
                         </div>
 
@@ -209,228 +210,127 @@
             <!-- End Services Section -->
 
 
-            <!-- App Section -->
-            <section id="app" class="app">
-                <div class="container text-center has-border">
-                    <h5>Our app is availble now, we made it easire, Download it now.</h5>
-                    <ul class="list-unstyled list-inline">
-                        <li><a href="https://bootstraptemple.com/" target="_blank" title="Google Play" class="btn-unique-white">Google Play</a></li>
-                        <li><a href="https://bootstraptemple.com/" target="_blank" title="Appstore" class="btn-unique-white">App Store</a></li>
-                        <li><a href="https://bootstraptemple.com/" target="_blank" title="Bootstrap Temple" class="btn-unique-white">Download this template</a></li>
-                    </ul>
-                </div>
-            </section>
-            <!-- End App Section -->
-
-
-
             <!-- Dishes Section -->
             <section id="dishes" class="dishes">
                 <div class="container text-center">
                     <header>
-                        <h2>Signature Dishes</h2>
-                        <h3>Fresh and healthy food available</h3>
+                        <h2>Dessert</h2>
+                        <h3>Makanan segar menyegarkan</h3>
                     </header>
                     <!-- Set up your HTML -->
                     <div class="owl-carousel owl-theme">
                         <!-- item -->
                         <div class="dish">
+
                             <div class="profile">
-                                <img src="assets/img/dish-c.png" class="img-responsive" alt="dish name">
+                                <img src="assets/img/dish-a.jpg" class="img-responsive" alt="dish name">
                                 <div class="price">
-                                    <span>17$</span>
+                                    <span>4k</span>
                                 </div>
                             </div>
                             <div class="text">
-                                <h4>Fried Shrimp</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+                                <h4>Oreo Soft Ice Cream</h4>
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p> -->
                             </div>
                         </div>
 
                         <!-- item -->
                         <div class="dish">
                             <div class="profile">
-                                <img src="assets/img/dish-b.png" class="img-responsive" alt="dish name">
+                                <img src="assets/img/dish-b.jpg" class="img-responsive" alt="dish name">
                                 <div class="price">
-                                    <span>17$</span>
+                                    <span>4k</span>
                                 </div>
                             </div>
                             <div class="text">
-                                <h4>Fried Shrimp</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+                                <h4>Milo Soft Ice Cream</h4>
+                                <p></p>
                             </div>
                         </div>
 
                         <!-- item -->
                         <div class="dish">
                             <div class="profile">
-                                <img src="assets/img/dish-a.png" class="img-responsive" alt="dish name">
+                                <img src="assets/img/dish-c.jpg" class="img-responsive" alt="dish name">
                                 <div class="price">
-                                    <span>17$</span>
+                                    <span>4k</span>
                                 </div>
                             </div>
                             <div class="text">
-                                <h4>Fried Shrimp</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+                                <h4>Strawberry Soft Ice Cream</h4>
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p> -->
                             </div>
                         </div>
 
                         <!-- item -->
                         <div class="dish">
                             <div class="profile">
-                                <img src="assets/img/dish-c.png" class="img-responsive" alt="dish name">
+                                <img src="assets/img/dish-e.jpg" class="img-responsive" alt="dish name">
                                 <div class="price">
-                                    <span>17$</span>
+                                    <span>4k</span>
                                 </div>
                             </div>
                             <div class="text">
-                                <h4>Fried Shrimp</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+                                <h4>Greentea Soft Ice Cream</h4>
+                                <p></p>
                             </div>
                         </div>
 
                         <!-- item -->
                         <div class="dish">
                             <div class="profile">
-                                <img src="assets/img/dish-b.png" class="img-responsive" alt="dish name">
+                                <img src="assets/img/dish-f.jpg" class="img-responsive" alt="dish name">
                                 <div class="price">
-                                    <span>17$</span>
+                                    <span>4k</span>
                                 </div>
                             </div>
                             <div class="text">
-                                <h4>Fried Shrimp</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+                                <h4>Bubble Gum Soft Ice Cream</h4>
+                                <p></p>
                             </div>
                         </div>
 
                         <!-- item -->
-                        <div class="dish">
-                            <div class="profile">
-                                <img src="assets/img/dish-a.png" class="img-responsive" alt="dish name">
-                                <div class="price">
-                                    <span>17$</span>
-                                </div>
-                            </div>
-                            <div class="text">
-                                <h4>Fried Shrimp</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </section>
             <!-- End Dishes Section -->
 
 
-            <!-- Offers Section -->
-            <section id="offers" class="offers">
-                <div class="container text-center">
-
-                    <header>
-                        <h2>Special Offers</h2>
-                        <h3>Don't miss our offers</h3>
-                    </header>
-
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="item">
-                                <div class="discount">
-                                    <span>40% <br> Off</span>
-                                </div>
-                                <div class="profile">
-                                    <img src="assets/img/dish-d.png" alt="dish name" class="img-responsive">
-                                </div>
-                                <div class="text">
-                                    <h4>Dish Name</h4>
-                                    <p class="after text-primary text-large">30.00$</p>
-                                    <p class="before text-muted text-large">50.00$</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-4">
-                            <div class="item">
-                                <div class="discount">
-                                    <span>40% <br> Off</span>
-                                </div>
-                                <div class="profile">
-                                    <img src="assets/img/dish-d.png" alt="dish name" class="img-responsive">
-                                </div>
-                                <div class="text">
-                                    <h4>Dish Name</h4>
-                                    <p class="after text-primary text-large">30.00$</p>
-                                    <p class="before text-muted text-large">50.00$</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-4">
-                            <div class="item">
-                                <div class="discount">
-                                    <span>40% <br> Off</span>
-                                </div>
-                                <div class="profile">
-                                    <img src="assets/img/dish-d.png" alt="dish name" class="img-responsive">
-                                </div>
-                                <div class="text">
-                                    <h4>Dish Name</h4>
-                                    <p class="after text-primary">30.00$</p>
-                                    <p class="before text-muted">50.00$</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- End Offers Section -->
-
 
             <!-- Menu Section -->
             <section id="menu" class="menu">
                 <div class="container">
                     <header class="text-center">
-                        <h2>Our food menu</h2>
-                        <h3>Our most popular menu</h3>
+                        <h2>Menu Kami</h2>
+                        <h3>Menu popular kami</h3>
                     </header>
 
                     <div class="menu">
                         <!-- Tabs Navigatin -->
                         <ul class="nav nav-tabs text-center has-border" role="tablist">
-                            <li role="presentation" class="active"><a href="#breakfast" aria-controls="breakfast" role="tab" data-toggle="tab">Breakfast</a></li>
-                            <li role="presentation"><a href="#lunch" aria-controls="lunch" role="tab" data-toggle="tab">Lunch</a></li>
-                            <li role="presentation"><a href="#dinner" aria-controls="dinner" role="tab" data-toggle="tab">Dinner</a></li>
-                            <li role="presentation"><a href="#party" aria-controls="party" role="tab" data-toggle="tab">Party</a></li>
-                            <li role="presentation"><a href="#drinks" aria-controls="drinks" role="tab" data-toggle="tab">Drinks</a></li>
+                            <li role="presentation" class="active"><a href="#marshmallow" aria-controls="marshmallow" role="tab" data-toggle="tab">Marshmallow Ice Cream</a></li>
+                            <li role="presentation"><a href="#icecream" aria-controls="icecream" role="tab" data-toggle="tab">Soft Ice Cream</a></li>
+                            <li role="presentation"><a href="#topping" aria-controls="topping" role="tab" data-toggle="tab">Topping</a></li>
+
                         </ul>
 
                         <!-- Tab panes -->
                         <div class="tab-content">
 
                             <!-- Breakfast Panel -->
-                            <div role="tabpanel" class="tab-pane active" id="breakfast">
+                            <div role="tabpanel" class="tab-pane active" id="marshmallow">
                                 <div class="row">
                                     <!-- item -->
                                     <div class="col-sm-6">
                                         <div class="menu-item recommended has-border clearfix">
                                             <div class="item-details pull-left">
-                                                <h5>Wild Mushroom Bucatini with Kale</h5>
-                                                <p>Mushroom / Veggie / White Sources</p>
+                                                <h5>Classic Choco</h5>
+                                                <p>Marshmallow / Ice Cream Coklat</p>
                                             </div>
                                             <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
-                                                <span class="text-medium">Recommended</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item recommended has-border clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>Lemon and Garlic Green Beans</h5>
-                                                <p>Lemon / Garlic / Beans</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
+                                                <strong class="text-large text-primary">6k</strong>
                                                 <span class="text-medium">Recommended</span>
                                             </div>
                                         </div>
@@ -439,140 +339,31 @@
                                     <div class="col-sm-6">
                                         <div class="menu-item clearfix">
                                             <div class="item-details pull-left">
-                                                <h5>LambBeef Kofka Skewers with Tzatziki</h5>
-                                                <p>Lamb / Wine / Butter</p>
+                                                <h5>Strawberry Delight</h5>
+                                                <p>Marshmallow / Ice Cream Strawberry</p>
                                             </div>
                                             <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
+                                                <strong class="text-large text-primary">6k</strong>
 
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>Meatloaf with Black Pepper-Honey BBQ</h5>
-                                                <p>Pepper / Chicken / Honey</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>Imported Oysters Grill (5 Pieces)</h5>
-                                                <p>Oysters / Veggie / Ginger</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>Wild Mushroom Bucatini with Kale</h5>
-                                                <p>Mushroom / Veggie / White Sources</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item recommended has-border clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>Lemon and Garlic Green Beans</h5>
-                                                <p>Lemon / Garlic / Beans</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
-                                                <span class="text-medium">Recommended</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>Wild Mushroom Bucatini with Kale</h5>
-                                                <p>Mushroom / Veggie / White Sources</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>LambBeef Kofka Skewers with Tzatziki</h5>
-                                                <p>Lamb / Wine / Butter</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
 
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>Meatloaf with Black Pepper-Honey BBQ</h5>
-                                                <p>Pepper / Chicken / Honey</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>Imported Oysters Grill (5 Pieces)</h5>
-                                                <p>Oysters / Veggie / Ginger</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>Wild Mushroom Bucatini with Kale</h5>
-                                                <p>Mushroom / Veggie / White Sources</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div><!-- End Breakfast Panel-->
 
                             <!-- lunch Panel -->
-                            <div role="tabpanel" class="tab-pane fade" id="lunch">
+                            <div role="tabpanel" class="tab-pane fade" id="icecream">
                                 <div class="row">
                                     <!-- item -->
                                     <div class="col-sm-6">
                                         <div class="menu-item recommended has-border clearfix">
                                             <div class="item-details pull-left">
-                                                <h5>Lemon and Garlic Green Beans</h5>
-                                                <p>Lemon / Garlic / Beans</p>
+                                                <h5>Oreo</h5>
+                                                <p></p>
                                             </div>
                                             <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
+                                                <strong class="text-large text-primary">4k</strong>
                                                 <span class="text-medium">Recommended</span>
                                             </div>
                                         </div>
@@ -581,11 +372,11 @@
                                     <div class="col-sm-6">
                                         <div class="menu-item clearfix">
                                             <div class="item-details pull-left">
-                                                <h5>LambBeef Kofka Skewers with Tzatziki</h5>
-                                                <p>Lamb / Wine / Butter</p>
+                                                <h5>Milo</h5>
+                                                <p></p>
                                             </div>
                                             <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
+                                                <strong class="text-large text-primary">4k</strong>
 
                                             </div>
                                         </div>
@@ -594,11 +385,11 @@
                                     <div class="col-sm-6">
                                         <div class="menu-item clearfix">
                                             <div class="item-details pull-left">
-                                                <h5>Meatloaf with Black Pepper-Honey BBQ</h5>
-                                                <p>Pepper / Chicken / Honey</p>
+                                                <h5>Strawberry</h5>
+                                                <p></p>
                                             </div>
                                             <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
+                                                <strong class="text-large text-primary">4k</strong>
                                             </div>
                                         </div>
                                     </div>
@@ -606,11 +397,11 @@
                                     <div class="col-sm-6">
                                         <div class="menu-item clearfix">
                                             <div class="item-details pull-left">
-                                                <h5>Imported Oysters Grill (5 Pieces)</h5>
-                                                <p>Oysters / Veggie / Ginger</p>
+                                                <h5>Greentea</h5>
+                                                <p></p>
                                             </div>
                                             <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
+                                                <strong class="text-large text-primary">4k</strong>
                                             </div>
                                         </div>
                                     </div>
@@ -618,90 +409,30 @@
                                     <div class="col-sm-6">
                                         <div class="menu-item clearfix">
                                             <div class="item-details pull-left">
-                                                <h5>Wild Mushroom Bucatini with Kale</h5>
-                                                <p>Mushroom / Veggie / White Sources</p>
+                                                <h5>Bubble Gum</h5>
+                                                <p></p>
                                             </div>
                                             <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
+                                                <strong class="text-large text-primary">4k</strong>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>Wild Mushroom Bucatini with Kale</h5>
-                                                <p>Mushroom / Veggie / White Sources</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>LambBeef Kofka Skewers with Tzatziki</h5>
-                                                <p>Lamb / Wine / Butter</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
 
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>Meatloaf with Black Pepper-Honey BBQ</h5>
-                                                <p>Pepper / Chicken / Honey</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>Imported Oysters Grill (5 Pieces)</h5>
-                                                <p>Oysters / Veggie / Ginger</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>Wild Mushroom Bucatini with Kale</h5>
-                                                <p>Mushroom / Veggie / White Sources</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div><!-- End lunch Panel-->
 
                             <!-- Dinner Panel -->
-                            <div role="tabpanel" class="tab-pane fade" id="dinner">
+                            <div role="tabpanel" class="tab-pane fade" id="topping">
                                 <div class="row">
                                     <!-- item -->
                                     <div class="col-sm-6">
                                         <div class="menu-item clearfix">
                                             <div class="item-details pull-left">
-                                                <h5>LambBeef Kofka Skewers with Tzatziki</h5>
-                                                <p>Lamb / Wine / Butter</p>
+                                                <h5>Oreo</h5>
+                                                <p></p>
                                             </div>
                                             <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
+                                                <strong class="text-large text-primary">1k</strong>
 
                                             </div>
                                         </div>
@@ -710,11 +441,11 @@
                                     <div class="col-sm-6">
                                         <div class="menu-item clearfix">
                                             <div class="item-details pull-left">
-                                                <h5>Meatloaf with Black Pepper-Honey BBQ</h5>
-                                                <p>Pepper / Chicken / Honey</p>
+                                                <h5>Chacha</h5>
+                                                <p></p>
                                             </div>
                                             <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
+                                                <strong class="text-large text-primary">1k</strong>
                                             </div>
                                         </div>
                                     </div>
@@ -722,11 +453,11 @@
                                     <div class="col-sm-6">
                                         <div class="menu-item recommended has-border clearfix">
                                             <div class="item-details pull-left">
-                                                <h5>Lemon and Garlic Green Beans</h5>
-                                                <p>Lemon / Garlic / Beans</p>
+                                                <h5>Choco Chips</h5>
+                                                <p></p>
                                             </div>
                                             <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
+                                                <strong class="text-large text-primary">1k</strong>
                                                 <span class="text-medium">Recommended</span>
                                             </div>
                                         </div>
@@ -735,11 +466,11 @@
                                     <div class="col-sm-6">
                                         <div class="menu-item clearfix">
                                             <div class="item-details pull-left">
-                                                <h5>Imported Oysters Grill (5 Pieces)</h5>
-                                                <p>Oysters / Veggie / Ginger</p>
+                                                <h5>Koko Crunch</h5>
+                                                <p></p>
                                             </div>
                                             <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
+                                                <strong class="text-large text-primary">1k</strong>
                                             </div>
                                         </div>
                                     </div>
@@ -747,11 +478,11 @@
                                     <div class="col-sm-6">
                                         <div class="menu-item clearfix">
                                             <div class="item-details pull-left">
-                                                <h5>Wild Mushroom Bucatini with Kale</h5>
-                                                <p>Mushroom / Veggie / White Sources</p>
+                                                <h5>Yuppy</h5>
+                                                <p></p>
                                             </div>
                                             <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
+                                                <strong class="text-large text-primary">1k</strong>
                                             </div>
                                         </div>
                                     </div>
@@ -759,11 +490,11 @@
                                     <div class="col-sm-6">
                                         <div class="menu-item clearfix">
                                             <div class="item-details pull-left">
-                                                <h5>Wild Mushroom Bucatini with Kale</h5>
-                                                <p>Mushroom / Veggie / White Sources</p>
+                                                <h5>Chocolatos</h5>
+                                                <p></p>
                                             </div>
                                             <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
+                                                <strong class="text-large text-primary">1k</strong>
                                             </div>
                                         </div>
                                     </div>
@@ -771,11 +502,11 @@
                                     <div class="col-sm-6">
                                         <div class="menu-item clearfix">
                                             <div class="item-details pull-left">
-                                                <h5>LambBeef Kofka Skewers with Tzatziki</h5>
-                                                <p>Lamb / Wine / Butter</p>
+                                                <h5>Hello Panda</h5>
+                                                <p></p>
                                             </div>
                                             <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
+                                                <strong class="text-large text-primary">1k</strong>
 
                                             </div>
                                         </div>
@@ -784,298 +515,19 @@
                                     <div class="col-sm-6">
                                         <div class="menu-item clearfix">
                                             <div class="item-details pull-left">
-                                                <h5>Meatloaf with Black Pepper-Honey BBQ</h5>
-                                                <p>Pepper / Chicken / Honey</p>
+                                                <h5>Milo</h5>
+                                                <p></p>
                                             </div>
                                             <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
+                                                <strong class="text-large text-primary">1k</strong>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>Imported Oysters Grill (5 Pieces)</h5>
-                                                <p>Oysters / Veggie / Ginger</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>Wild Mushroom Bucatini with Kale</h5>
-                                                <p>Mushroom / Veggie / White Sources</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
-                                            </div>
-                                        </div>
-                                    </div>
+
                                 </div>
                             </div><!-- End Dinner Panel-->
 
-                            <!-- Party Panel -->
-                            <div role="tabpanel" class="tab-pane fade" id="party">
-                                <div class="row">
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item recommended has-border clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>Lemon and Garlic Green Beans</h5>
-                                                <p>Lemon / Garlic / Beans</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
-                                                <span class="text-medium">Recommended</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>LambBeef Kofka Skewers with Tzatziki</h5>
-                                                <p>Lamb / Wine / Butter</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
 
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>Meatloaf with Black Pepper-Honey BBQ</h5>
-                                                <p>Pepper / Chicken / Honey</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>Imported Oysters Grill (5 Pieces)</h5>
-                                                <p>Oysters / Veggie / Ginger</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>Wild Mushroom Bucatini with Kale</h5>
-                                                <p>Mushroom / Veggie / White Sources</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>Wild Mushroom Bucatini with Kale</h5>
-                                                <p>Mushroom / Veggie / White Sources</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>LambBeef Kofka Skewers with Tzatziki</h5>
-                                                <p>Lamb / Wine / Butter</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>Meatloaf with Black Pepper-Honey BBQ</h5>
-                                                <p>Pepper / Chicken / Honey</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>Imported Oysters Grill (5 Pieces)</h5>
-                                                <p>Oysters / Veggie / Ginger</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>Wild Mushroom Bucatini with Kale</h5>
-                                                <p>Mushroom / Veggie / White Sources</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- End Party Panel-->
-
-                            <!-- Drinks Panel -->
-                            <div role="tabpanel" class="tab-pane fade" id="drinks">
-                                <div class="row">
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>LambBeef Kofka Skewers with Tzatziki</h5>
-                                                <p>Lamb / Wine / Butter</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>Meatloaf with Black Pepper-Honey BBQ</h5>
-                                                <p>Pepper / Chicken / Honey</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item recommended has-border clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>Lemon and Garlic Green Beans</h5>
-                                                <p>Lemon / Garlic / Beans</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
-                                                <span class="text-medium">Recommended</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>Imported Oysters Grill (5 Pieces)</h5>
-                                                <p>Oysters / Veggie / Ginger</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>Wild Mushroom Bucatini with Kale</h5>
-                                                <p>Mushroom / Veggie / White Sources</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>Wild Mushroom Bucatini with Kale</h5>
-                                                <p>Mushroom / Veggie / White Sources</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>LambBeef Kofka Skewers with Tzatziki</h5>
-                                                <p>Lamb / Wine / Butter</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>Meatloaf with Black Pepper-Honey BBQ</h5>
-                                                <p>Pepper / Chicken / Honey</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>Imported Oysters Grill (5 Pieces)</h5>
-                                                <p>Oysters / Veggie / Ginger</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- item -->
-                                    <div class="col-sm-6">
-                                        <div class="menu-item clearfix">
-                                            <div class="item-details pull-left">
-                                                <h5>Wild Mushroom Bucatini with Kale</h5>
-                                                <p>Mushroom / Veggie / White Sources</p>
-                                            </div>
-                                            <div class="item-price pull-right">
-                                                <strong class="text-large text-primary">20$</strong>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- End Drinks Panel-->
                         </div>
                     </div>
                 </div>
@@ -1087,8 +539,8 @@
             <section id="events" class="events">
                 <div class="container">
                     <header class="text-center">
-                        <h2>Upcoming Events</h2>
-                        <h3>Don’t miss our awesome events</h3>
+                        <h2>Promo</h2>
+                        <h3>Jangan lewatkan promo kami</h3>
                     </header>
 
                     <div class="row">
@@ -1097,7 +549,7 @@
                             <div class="profile has-border" style="background-image: url('assets/img/event-bg.jpg');">
                                 <ul class="date list-unstyled list-inline clearfix">
                                     <li class="day pull-left">15<sup>th</sup></li>
-                                    <li class="month pull-left">December <span>2016</span></li>
+                                    <li class="month pull-left">Desember <span>2018</span></li>
                                 </ul>
                             </div>
                         </div>
@@ -1105,8 +557,8 @@
                         <!-- Details Side  -->
                         <div class="col-sm-6">
                             <div class="details">
-                                <h3>Italian Master Class</h3>
-                                <h4 class="text-primary">15 December 2016 | 20:00</h4>
+                                <h3>Beli 3 gratis 1</h3>
+                                <h4 class="text-primary">15 Desember 2018 | 20:00</h4>
                                 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</p>
                                 <a href="#" class="read-more btn-unique">Read More</a>
                             </div>
@@ -1121,8 +573,8 @@
             <section id="gallery" class="gallery">
                 <div class="container text-center">
                     <header>
-                        <h2>Our Gallery</h2>
-                        <h3>Discover the photo gallery</h3>
+                        <h2>Galeri Kami</h2>
+                        <h3>Dokumentasi kedai</h3>
                     </header>
 
                     <div class="gellery">
@@ -1210,8 +662,8 @@
             <section id="booking" class="booking">
                 <div class="container text-center">
                     <header>
-                        <h2>Order your table</h2>
-                        <h3>Enjoy your meal at our restaurant</h3>
+                        <h2>Pesan Dessert</h2>
+                        <h3>Nikmati menu kedai kami</h3>
                     </header>
 
                     <div class="row">
@@ -1268,23 +720,23 @@
                 <div class="container text-center">
                     <div class="form-holder">
                         <header>
-                            <h2>Contact Us</h2>
-                            <h3>Feel free to contact us</h3>
+                            <h2>Kontak Kami</h2>
+                            <h3>Untuk kedai yang lebih baik</h3>
                         </header>
 
                         <form method="get" action="#" id="contact-form">
                             <div class="row">
-                                <label for="user-name" class="col-sm-6 unique">Name
+                                <label for="user-name" class="col-sm-6 unique">Nama
                                     <input type="text" name="username" id="user-name" required>
                                 </label>
                                 <label for="user-email" class="col-sm-6 unique">Email
                                     <input type="email" name="useremail" id="user-email" required>
                                 </label>
-                                <label for="message" class="col-sm-12 unique">Your Message
+                                <label for="message" class="col-sm-12 unique">Pesan Anda
                                     <textarea name="message" id="message" required></textarea>
                                 </label>
                                 <div class="col-sm-12">
-                                    <button type="submit" class="btn-unique" id="submit">Send</button>
+                                    <button type="submit" class="btn-unique" id="submit">Kirim</button>
                                 </div>
                             </div>
                         </form>
@@ -1298,60 +750,42 @@
             <footer id="mainFooter" class="mainFooter">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-4 brief">
+                        <div class="col-md-6 brief">
                             <div class="header">
-                                <img src="assets/img/logo-footer.png" alt="italiano" width="100">
+                                <img src="assets/img/logo-footer.png" alt="kamelo" width="100">
                             </div>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                            <p>Kamelo adalah kedai dessert marshmallow ice cream dan ice cream.</p>
                         </div>
 
-                        <div class="col-md-4 contact">
+                        <div class="col-md-6 contact">
                             <div class="header">
-                                <h6>Contact</h6>
+                                <h6>Kontak</h6>
                             </div>
                             <ul class="contact list-unstyled">
-                                <li><span class="icon-map text-primary"></span>Basioun, 23 July st, Egypt</li>
-                                <li><a href="mailto:Italiano@Company.com"><span class="icon-phone text-primary"></span>Italiano@Company.com</a></li>
-                                <li><span class="icon-mail text-primary"></span>9465 7675 294</li>
-                                <li><span class="icon-printer text-primary"></span>333-999-666</li>
+                                <li><span class="icon-map text-primary"></span>Jalan Kaki Kediri</li>
+                                <li><a href="mailto:meilryreinadhee@gmail.com"><span class="icon-phone text-primary"></span>kamelo@gmail.com</a></li>
+                                <li><span class="icon-mail text-primary"></span>0819 0000 000</li>
+
                             </ul>
                         </div>
 
-                        <div class="col-md-4 newsletter">
-                            <div class="header">
-                                <h6>Newsletter</h6>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmo.</p>
-                            <form action="#" id="subscribe" class="clearfix">
-                                <input type="email" name="subscribtion-email" placeholder="Enter Your Email Address" class="pull-left">
-                                <button type="submit" class="btn-unique has-border pull-left">Subscribe</button>
-                            </form>
-                        </div>
+
                     </div>
 
                     <ul class="social list-unstyled list-inline">
-                        <li><a href="#" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="#" target="_blank" title="Google plus"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#" target="_blank" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
-                        <li><a href="#" target="_blank" title="Skype"><i class="fa fa-skype"></i></a></li>
+
+                        <li><a href="https://www.instagram.com/kameloku/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+
                     </ul>
                 </div>
 
                 <div class="copyrights">
                     <div class="container">
                         <div class="row">
-                            <div class="col-sm-5">
-                                <ul class="list-unstyled list-inline">
-                                    <li><a href="#">Policy Privacy</a></li>
-                                    <li><a href="#">Terms of Use</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                </ul>
-                            </div>
+
 
                             <div class="col-sm-7">
-                                <p>&copy; 2017 Italiano Restaurant. Template By <a href="https://bootstraptemple.com/" target="_blank">BootstrapTemple.com</a></p>
+                                <p>&copy; 2018 Kamelo </a></p>
                                 <!-- Please do not remove the backlink to us unless you have purchased the attribution-free license at https://bootstraptemple.com. It is part of the license conditions. Thanks for understanding :) -->
                             </div>
                         </div>
