@@ -1,6 +1,14 @@
 <?php
 class Admin extends CI_Controller {
 
+	function __construct(){
+		parent::__construct();
+	
+		if($this->session->userdata('status') != "login"){
+			redirect(base_url('login'));
+		}
+	}
+
 	public function index()
 	{
 		$this->load->view('admin');
@@ -25,4 +33,9 @@ class Admin extends CI_Controller {
 	{
 		$this->load->view('statPenjualan');
 	}
+
+	public function logout(){
+		$this->session->sess_destroy();
+		redirect(base_url('login'));
+}
 }

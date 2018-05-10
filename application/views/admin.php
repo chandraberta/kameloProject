@@ -9,11 +9,11 @@
   <meta name="author" content="">
   <title>Admin kamelo</title>
   <!-- Bootstrap core CSS-->
-  <link href="<?php echo base_url('assets/vendor/bootstrap/css/bootstrap.min.css')?>" rel="stylesheet">
+  <link href="<?php echo base_url('assets/admin/vendor/bootstrap/css/bootstrap.min.css')?>" rel="stylesheet">
   <!-- Custom fonts for this template-->
-  <link href="<?php echo base_url ('assets/vendor/font-awesome/css/font-awesome.min.css')?>" rel="stylesheet" type="text/css">
+  <link href="<?php echo base_url ('assets/admin/vendor/font-awesome/css/font-awesome.min.css')?>" rel="stylesheet" type="text/css">
   <!-- Custom styles for this template-->
-  <link href="<?php echo base_url('assets/css/sb-admin.css" rel="stylesheet')?>">
+  <link href="<?php echo base_url('assets/admin/css/sb-admin.css" rel="stylesheet')?>">
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
@@ -48,7 +48,7 @@
       </ul>
       <ul class="navbar-nav ml-auto">        
         <li class="nav-item">
-          <a class="nav-link" data-toggle="modal" data-target="#exampleModal">Logout</a>
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal" href="<?php echo base_url('admin/logout');?>">Logout</a>
         </li>
       </ul>
     </div>

@@ -48,7 +48,7 @@
       </ul>
       <ul class="navbar-nav ml-auto">        
         <li class="nav-item">
-          <a class="nav-link" data-toggle="modal" data-target="#exampleModal">Logout</a>
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal" href="<?php echo base_url('admin/logout');?>">Logout</a>
         </li>
       </ul>
     </div>
@@ -62,11 +62,31 @@
         </li>
         <li class="breadcrumb-item active">Navbar</li>
       </ol>
-      <h1>Ini Halaman delivery order</h1>
+      <h1>Delivery order</h1>
       <hr>
-      <p>The SB Admin navbar can be either fixed or static, and it supports the navbar-light and navbar-dark Bootstrap 4 classes.</p>
+      <div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-table"></i> Data Table Example</div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>No order</th>
+                  <th>Nama Customer</th>
+                  <th>Alamat</th>
+                  <th>Item</th>
+                  <th>Topping</th>
+                  <th>Jumlah</th>
+                  <th>Tanggal ambil</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+            </table>
+
+<!--
       <a class="btn btn-primary" href="#" id="toggleNavPosition">Toggle Fixed/Static Navbar</a>
-      <a class="btn btn-primary" href="#" id="toggleNavColor">Toggle Navbar Color</a>
+      <a class="btn btn-primary" href="#" id="toggleNavColor">Toggle Navbar Color</a> -->
       <!-- Blank div to give the page height to preview the fixed vs. static navbar-->
       <div style="height: 1000px;"></div>
     </div>

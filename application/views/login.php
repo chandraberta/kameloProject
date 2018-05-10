@@ -1,83 +1,50 @@
-<?php
-// Langkah 1 : Memulai session PHP.
-// Harus dimulai pertama kali untuk mencegah error
-// headers already sent
-session_start();
-//Langkah 2 : Memeriksa apakah pengguna sudah login dengan memeriksa nilai session
-if(!empty($_SESSION['logged_in'])== true)
-{
-	//jika sudah, maka alihkan pengguna di halaman index
-	//dan beritahu pengguna jika sudah login
-	header('Location: index.php?action=already_logged_in');
-}
-?>
+<!DOCTYPE html>
+<html lang="en">
 
-<html>
 <head>
-<title>Script Login PHP </title>
-<link type="text/css" rel="stylesheet"
-href="style.css"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>SB Admin - Start Bootstrap Template</title>
+  <!-- Bootstrap core CSS-->
+  <link href="<?php echo base_url('assets/vendor/bootstrap/css/bootstrap.min.css');?>" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="<?php echo base_url('assets/vendor/font-awesome/css/font-awesome.min.css');?>" rel="stylesheet" type="text/css">
+  <!-- Custom styles for this template-->
+  <link href="<?php echo base_url('assets/css/sb-admin.css');?>" rel="stylesheet">
 </head>
 
-<body>
-<div id="loginForm">
-<p>
-  <?php
-//Langkah 3 : Memeriksa action dan menampilkan pesan yang sesuai.
-if(isset($_GET['action'])=='not_yet_logged_in')
-{
-	echo "<div id='infoMessage'> Anda belum login.</div>";
-}
-//Langkah 4 : Memeriksa jika pengguna sudah mengklik tombol 'login' dengan memeriksa variabel PHP $_POST
-if($_POST)
-{
-	//username dan password ini adalah contoh
-	//password harus dienkripsi supaya aman
-	$username = 'admin';
-	$password = 'admin';
-	
-	//memeriksa apakah password dan username yang dimasukkan sesuai
-	if($_POST['username']==$username &&
-		$_POST['password']==$password)
-		{
-			//Jika sesuai atur nilaisession menjadi true
-			$_SESSION['logged_in'] = true;
-			
-			//dan alihkan ke halaman index
-			header('Location: index.php');
-		}
-		else
-		{
-			//jika tidak sesuai, beritahu pengguna bahwa akses ditolak
-			echo "<div id='failedMessage'>Akses Ditolak .</div>";
-		}
-}
-?>
-<!-- tempat pengguna memasukkan username dan password -->
-<form action="login.php" method="post">
-
-<div id="formHeader">Login</div>
-<div id="formBody">
-<div class="formField">
-<input type="text" name="username" placeholder="Username"/>
-</div>
-
-<div class="formField">
-<input type="password" name="password" placeholder="password">
-</div>
-
-<div>
-<input type="submit" value="Login" class="customButton"/>
-</div>
-</div>
-
-
-<div id="userNotes">
-<div><a href="index.html">Pergi ke halaman utama</a></div>
-</div>
-
-</form>
-</p>
-</div>
+<body class="bg-dark">
+  <div class="container">
+    <div class="card card-login mx-auto mt-5">
+      <div class="card-header">Login</div>
+      <div class="card-body">
+        <form action="<?php echo base_url('login/aksi_login'); ?>" method="post"">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Username</label>
+            <input class="form-control" id="exampleInputEmail1" type="text" aria-describedby="emailHelp" placeholder="Enter Username" name="username">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input class="form-control" id="exampleInputPassword1" type="password" placeholder="Password" name="password">
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox"> Remember Password</label>
+            </div>
+          <input type="submit" class="btn btn-primary btn-block" value="Login">
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap core JavaScript-->
+  <script src="<?php echo base_url('vendor/jquery/jquery.min.js');?>"></script>
+  <script src="<?php echo base_url('vendor/bootstrap/js/bootstrap.bundle.min.js');?>"></script>
+  <!-- Core plugin JavaScript-->
+  <script src="<?php echo base_url('vendor/jquery-easing/jquery.easing.min.js');?>"></script>
 </body>
+
 </html>
