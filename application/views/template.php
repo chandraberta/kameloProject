@@ -7,13 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>Pre Order</title>
+  <title>Admin kamelo</title>
   <!-- Bootstrap core CSS-->
-  <link href="<?php echo base_url('assets/vendor/bootstrap/css/bootstrap.min.css')?>" rel="stylesheet">
+  <link href="<?php echo base_url('assets/admin/vendor/bootstrap/css/bootstrap.min.css')?>" rel="stylesheet">
   <!-- Custom fonts for this template-->
-  <link href="<?php echo base_url ('assets/vendor/font-awesome/css/font-awesome.min.css')?>" rel="stylesheet" type="text/css">
+  <link href="<?php echo base_url ('assets/admin/vendor/font-awesome/css/font-awesome.min.css')?>" rel="stylesheet" type="text/css">
   <!-- Custom styles for this template-->
-  <link href="<?php echo base_url('assets/css/sb-admin.css" rel="stylesheet')?>">
+  <link href="<?php echo base_url('assets/admin/css/sb-admin.css" rel="stylesheet')?>">
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
@@ -26,22 +26,22 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-          <a class="nav-link" href="<?php echo('preorder')?>">
+          <a class="nav-link" href="<?php echo('admin/preorder')?>">
             <span class="nav-link-text">pre-Order</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-          <a class="nav-link" href="<?php echo ('deorder')?>">
+          <a class="nav-link" href="<?php echo ('admin/deorder')?>">
             <span class="nav-link-text">Delivery order</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-          <a class="nav-link" href="<?php echo ('laporanPenjualan')?>">
+          <a class="nav-link" href="<?php echo ('admin/laporanPenjualan')?>">
             <span class="nav-link-text">Laporan Penjualan</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-          <a class="nav-link" href="statPenjualan">
+          <a class="nav-link" href="admin/statPenjualan">
             <span class="nav-link-text">statistik Penjualan</span>
           </a>
         </li>
@@ -54,7 +54,7 @@
     </div>
   </nav>
   <div class="content-wrapper">
-    <div class="container-fluid">
+    <div class="container-fluid"> 
       <!-- Breadcrumbs-->
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
@@ -62,49 +62,11 @@
         </li>
         <li class="breadcrumb-item active">Navbar</li>
       </ol>
-      <h1>Pre Order</h1>
+      <h1>Navbar</h1>
       <hr>
-      <div class="card mb-3">
-        <div class="card-header">
-          <i class="fa fa-table"></i> Data Table Example</div>
-        <div class="card-body">
-          <div class="table-responsive">
-            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-              <thead>
-                <tr>
-                  <th>No order</th>
-                  <th>Nama Customer</th>
-                  <th>Item</th>
-                  <th>Topping</th>
-                  <th>Jumlah</th>
-                  <th>Tanggal ambil</th>
-                  <th>Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                <?php $n=0;
-              foreach ($semua->result_array() as $d) {
-                $n++;?>
-                <tr>
-                  <td><?php echo $n;?></td>
-                  <td><?php echo $d['nama_cust'];?></td>
-                  <td><?php echo $d['item'];?></td>
-                  <td><?php echo $d['topping'];?></td>
-                  <td><?php echo $d['jumlah'];?></td>
-                  <td><?php echo $d['no_hp'];?></td>
-                  <td><a href="<?php echo site_url('produk/form/'.$d['id_produk']);?>"
-                  class="btn btn-success">Edit</a>
-                  <a href="<?php echo site_url('produk/hapus/'.$d['id_produk']);?>"
-                  class="btn btn-danger">Hapus</a>
-                </td>
-                </tr>
-                <?php } ?>
-              </tbody>
-            </table>
-
-    <!--
+      <?php echo $content;?>
       <a class="btn btn-primary" href="#" id="toggleNavPosition">Toggle Fixed/Static Navbar</a>
-      <a class="btn btn-primary" href="#" id="toggleNavColor">Toggle Navbar Color</a>-->
+      <a class="btn btn-primary" href="#" id="toggleNavColor">Toggle Navbar Color</a>
       <!-- Blank div to give the page height to preview the fixed vs. static navbar-->
       <div style="height: 1000px;"></div>
     </div>
