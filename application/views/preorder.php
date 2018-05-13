@@ -45,8 +45,13 @@
             <span class="nav-link-text">statistik Penjualan</span>
           </a>
         </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <a class="nav-link" href="admin/promo">
+            <span class="nav-link-text">Promo</span>
+          </a>
+        </li>
       </ul>
-      <ul class="navbar-nav ml-auto">        
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link" data-toggle="modal" data-target="#exampleModal" href="<?php echo base_url('admin/logout');?>">Logout</a>
         </li>

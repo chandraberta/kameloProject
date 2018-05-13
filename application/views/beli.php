@@ -60,10 +60,12 @@
                                 <li><a href="#dishes">Dessert</a></li>
                                 <li><a href="#menu">Menu</a></li>
                                 <li><a href="#gallery">Galeri</a></li>
+                                <li><a href="#booking">Pre Order</a></li>
+                                <li><a href="#delivery">Delivery Order</a></li>
                                 <li><a href="#contact">Kontak</a></li>
                             </ul>
-                            <a href="#" class="btn navbar-btn btn-unique hidden-sm hidden-xs" id="open-reservation">Buat Pesanan</a>
-                            <a href="#" class="btn navbar-btn btn-unique hidden-sm hidden-xs" id="open-reservation">Buat Orderan</a>
+                            <!-- <a href="#" class="btn navbar-btn btn-unique hidden-sm hidden-xs" id="open-reservation">Buat Pesanan</a>
+                            <a href="#" class="btn navbar-btn btn-unique hidden-sm hidden-xs" id="open-reservation">Buat Orderan</a> -->
                         </div>
                     </div>
                 </nav>
@@ -667,11 +669,181 @@
 
 
             <!-- Booking Section -->
+            <section id="booking" class="booking">
+                <div class="container text-center">
+                    <header>
+                        <h2>Pre Order</h2>
+                        <h3>Ingin memesan, disini tempatnya!</h3>
+                    </header>
 
+                    <div class="row">
+                        <div class="form-holder col-md-10 col-md-push-1 text-center">
+                            <div class="ribbon">
+                                <i class="fa fa-star"></i>
+                            </div>
+
+                            <h2>Buat Pesanan</h2>
+                            <h3>Dan nikmati kamelomu</h3>
+
+                            <form id="booking-form" method="get" action="#">
+                                <div class="row">
+                                    <div class="col-md-10 col-md-push-1">
+                                        <div class="row">
+                                            <label for="name" class="col-sm-6 unique">Nama
+                                                <input name="name" type="text" id="name" required>
+                                            </label>
+                                            <label for="number" class="col-sm-6 unique">No Hp
+                                                <input name="number" type="text" id="number" required>
+                                                <br><br>
+                                            </label>
+                                            <label for="item" class="col-sm-4 unique">Item
+                                              <br><br>
+                                              <select name="cars">
+                                                <option value="mclassic">Marshmallow Classic Choco</option>
+                                                <option value="mdelight">Marshmallow Strawberry Delight</option>
+                                                <option value="icoreo">Ice Cream Oreo</option>
+                                                <option value="icmilo">Ice Cream Milo</option>
+                                                <option value="icstrawberry">Ice Cream Strawberry</option>
+                                                <option value="icgreentea">Ice Cream Greentea</option>
+                                                <option value="icbubble">Ice Cream Bubble Gum</option>
+                                              </select>
+                                                <!-- <input name="item" type="text" id="item" required> -->
+                                            </label>
+                                            <label for="topping" class="col-sm-4 unique">Topping
+                                              <br><br>
+                                              <select name="topping">
+                                                <option value="no">Tanpa Topping</option>
+                                                <option value="oreo">Oreo</option>
+                                                <option value="chacha">Chacha</option>
+                                                <option value="chocochips">Choco Chips</option>
+                                                <option value="kokokeunch">Koko Crunch</option>
+                                                <option value="yuppy">Yuppy</option>
+                                                <option value="chocolatos">Chocolatos</option>
+                                                <option value="hellopanda">Hello Panda</option>
+                                                <option value="milo">Milo</option>
+                                              </select>
+                                                <!-- <input name="topping" type="text" id="topping" required> -->
+                                            </label>
+                                            <label for="people" class="col-sm-4 unique">Jumlah
+                                                <input name="people" type="number" id="people" min="1" required>
+                                            </label>
+
+                                            <label for="date" class="col-sm-12 unique">Tanggal Ambil
+                                                <input name="date" type="text" id="date" class="datepicker-here" data-language='en' required>
+                                            </label>
+                                            <!-- <label for="time" class="col-sm-6 unique">Time
+                                                <input name="time" type="text" id="time" class="timepicker" required>
+                                            </label>
+                                            <label for="request" class="col-sm-12 unique">Special Request
+                                                <textarea id="request" name="request" required></textarea>
+                                            </label>-->
+                                            <div class="col-sm-6">
+                                                <button type="submit" class="btn-unique">Tambah</button>
+                                                <br><br>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <button type="submit" class="btn-unique">Pesan</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <!-- End Booking Section -->
 
 
+            <section id="delivery" class="booking">
+                <div class="container text-center">
+                    <header>
+                        <h2>Delivery Order</h2>
+                        <h3>Ingin delivery, disini tempatnya!</h3>
+                    </header>
+
+                    <div class="row">
+                        <div class="form-holder col-md-10 col-md-push-1 text-center">
+                            <div class="ribbon">
+                                <i class="fa fa-star"></i>
+                            </div>
+
+                            <h2>Buat Pesanan</h2>
+                            <h3>Dan Kamelo akan datang ke tempatmu</h3>
+
+                            <form id="booking-form" method="get" action="#">
+                                <div class="row">
+                                    <div class="col-md-10 col-md-push-1">
+                                        <div class="row">
+                                            <label for="name" class="col-sm-6 unique">Nama
+                                                <input name="name" type="text" id="name" required>
+                                            </label>
+                                            <label for="number" class="col-sm-6 unique">No Hp
+                                                <input name="number" type="text" id="number" required>
+
+                                            </label>
+                                            <label for="item" class="col-sm-4 unique">Item
+                                              <br><br>
+                                              <select name="cars">
+                                                <option value="mclassic">Marshmallow Classic Choco</option>
+                                                <option value="mdelight">Marshmallow Strawberry Delight</option>
+                                                <option value="icoreo">Ice Cream Oreo</option>
+                                                <option value="icmilo">Ice Cream Milo</option>
+                                                <option value="icstrawberry">Ice Cream Strawberry</option>
+                                                <option value="icgreentea">Ice Cream Greentea</option>
+                                                <option value="icbubble">Ice Cream Bubble Gum</option>
+                                              </select>
+                                                <!-- <input name="item" type="text" id="item" required> -->
+                                            </label>
+                                            <label for="topping" class="col-sm-4 unique">Topping
+                                              <br><br>
+                                              <select name="topping">
+                                                <option value="no">Tanpa Topping</option>
+                                                <option value="oreo">Oreo</option>
+                                                <option value="chacha">Chacha</option>
+                                                <option value="chocochips">Choco Chips</option>
+                                                <option value="kokokeunch">Koko Crunch</option>
+                                                <option value="yuppy">Yuppy</option>
+                                                <option value="chocolatos">Chocolatos</option>
+                                                <option value="hellopanda">Hello Panda</option>
+                                                <option value="milo">Milo</option>
+                                              </select>
+                                                <!-- <input name="topping" type="text" id="topping" required> -->
+                                            </label>
+                                            <label for="people" class="col-sm-4 unique">Jumlah
+                                                <input name="people" type="number" id="people" min="1" required>
+                                            </label>
+
+                                            <label for="date" class="col-sm-6 unique">Tanggal Ambil
+                                                <input name="date" type="text" id="date" class="datepicker-here" data-language='en' required>
+                                            </label>
+                                            <!-- <label for="time" class="col-sm-6 unique">Time
+                                                <input name="time" type="text" id="time" class="timepicker" required>
+                                            </label>
+                                            <label for="request" class="col-sm-12 unique">Special Request
+                                                <textarea id="request" name="request" required></textarea>
+                                            </label>-->
+                                            <label for="address" class="col-sm-6 unique">Alamat
+                                                <input name="address" type="text" id="address" required>
+                                            </label>
+                                            <div class="col-sm-6">
+                                                <button type="submit" class="btn-unique">Tambah</button>
+                                                <br><br>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <button type="submit" class="btn-unique">Pesan</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <!-- End Booking Section -->
+
+
             <section id="contact" class="contact">
                 <div id="map"></div>
                 <div class="container text-center">
@@ -758,33 +930,40 @@
 
 
             <!-- moadal booking form -->
-            <div class="reservation-overlay hidden-sm hidden-xs">
+            <!-- <div class="reservation-overlay hidden-sm hidden-xs">
                 <section id="reservation-modal" class="reservation-modal">
                     <div id="close"><i class="icon-close"></i></div>
 
                     <div class="container">
                         <div class="row">
                             <div class="form-holder col-md-12 text-center">
-                                <h2>Make a reservation</h2>
-                                <h3>Book your table now</h3>
+                                <h2>Buat Pesanan</h2>
+                                <h3>Dan nikmati kamelomu</h3>
 
                                 <form id="booking-form-alternative" method="get"  action="#">
                                     <div class="row">
                                         <div class="col-md-push-1 col-sm-10">
                                             <div class="row">
-                                                <label for="cname" class="col-sm-6 unique">Name
+                                                <label for="cname" class="col-sm-6 unique">Nama
                                                     <input name="clientname" type="text" id="cname" required>
                                                 </label>
-                                                <label for="cemail" class="col-sm-6 unique">Email
+                                                <label for="cemail" class="col-sm-6 unique">No Hp
                                                     <input name="clientemail" type="email" id="cemail" required>
                                                 </label>
-                                                <label for="cnumber" class="col-sm-6 unique">Number
-                                                    <input name="clientnumber" type="text" id="cnumber" required>
-                                                </label>
-                                                <label for="cpeople" class="col-sm-6 unique">How Many People
+                                                <label for="cnumber" class="col-sm-6 unique">Item
+                                                  <br><br>
+                                                  <select name="cars">
+                                                    <option value="marshmallow">Marshmallow</option>
+                                                    <option value="strawberry">Soft Ice Cream Strawberry</option>
+
+                                                  </select>
+
+                                                    <!-- <input name="clientnumber" type="text" id="cnumber" required> -->
+                                                <!-- </label>
+                                                <label for="cpeople" class="col-sm-6 unique">Jumlah Pesanan
                                                     <input name="clientpeople" type="number" id="cpeople" min="1" required>
                                                 </label>
-                                                <label for="cdate" class="col-sm-6 unique">Date
+                                                <label for="cdate" class="col-sm-6 unique">Tanggal Ambil
                                                     <input name="clientdate" type="text" id="cdate" class="datepicker-here" data-language='en' required>
                                                 </label>
                                                 <label for="time-alt" class="col-sm-6 unique">Time
@@ -794,7 +973,7 @@
                                                     <textarea id="request-alt" name="clientrequest" required></textarea>
                                                 </label>
                                                 <div class="col-sm-12">
-                                                    <button type="submit" class="btn-unique">Book Now</button>
+                                                    <button type="submit" class="btn-unique">Pesan</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -804,7 +983,7 @@
                         </div>
                     </div>
                 </section>
-            </div><!-- end modal booking form -->
+            </div><!-- end modal booking form --> --> -->
         </div>
 
 
