@@ -38,6 +38,7 @@
         <!-- Custom CSS -->
         <link rel="stylesheet" href="<?php echo base_url('assets/css/style.default.css')?>"/>
         <!-- Modernizr -->
+
         <script type="text/javascript" src="<?php echo base_url('assets/js/modernizr.custom.79639.min.js')?>"></script>
     </head>
     <body>
@@ -47,7 +48,7 @@
             <header class="header">
                 <nav class="navbar navbar-default navbar-fixed-top">
                     <div class="container">
-                        <div class="navbar-header"><a href="http://localhost/kamelo/" class="navbar-brand"><img src="<?php echo base_url('assets/img/logo1.png')?>" alt="Kamelo" width="200"></a>
+                        <div class="navbar-header"><a href="http://localhost/kamelo/" class="navbar-brand"><img src="<?php echo base_url('assets/img/logo1.png')?>" alt="Kamelo" width="80"></a>
                             <div class="navbar-buttons">
                                 <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle navbar-btn">Menu<i class="fa fa-align-justify"></i></button>
                             </div>
@@ -698,18 +699,113 @@
                                             </label>
                                             <label for="item" class="col-sm-4 unique">Item
                                               <br><br>
-                                              <select name="cars">
-                                                <option value="mclassic">Marshmallow Classic Choco</option>
+                                              <div class="dropdown">
+                                                  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Item
+                                                  <span class="caret"></span></button>
+                                                  <ul class="dropdown-menu">
+
+                                                    <li class="dropdown-submenu">
+                                                      <a class="test" tabindex="-1" href="#">Marshmallow Classic Choco <span class="caret"></span></a>
+                                                      <ul class="dropdown-menu">
+                                                        <li><a tabindex="-1" href="#">Tanpa Topping</a></li>
+                                                        <li><a tabindex="-1" href="#">Oreo</a></li>
+                                                        <li><a tabindex="-1" href="#">Chacha</a></li>
+                                                        <li><a tabindex="-1" href="#">Choco Chips</a></li>
+                                                        <li><a tabindex="-1" href="#">Koko Crunch</a></li>
+                                                        <li><a tabindex="-1" href="#">Yuppy</a></li>
+                                                        <li><a tabindex="-1" href="#">Chocolatos</a></li>
+                                                        <li><a tabindex="-1" href="#">Hello Panda</a></li>
+                                                        <li><a tabindex="-1" href="#">Milo</a></li>
+
+                                                      </ul>
+                                                    </li>
+                                                    <li class="dropdown-submenu">
+                                                            <a class="test" tabindex="-1" href="#">Marshmallow Strawberry Delight <span class="caret"></span></a>
+                                                            <ul class="dropdown-menu">
+                                                              <li><a tabindex="-1" href="#">Tanpa Topping</a></li>
+                                                              <li><a tabindex="-1" href="#">Oreo</a></li>
+                                                              <li><a tabindex="-1" href="#">Chacha</a></li>
+                                                              <li><a tabindex="-1" href="#">Choco Chips</a></li>
+                                                              <li><a tabindex="-1" href="#">Koko Crunch</a></li>
+                                                              <li><a tabindex="-1" href="#">Yuppy</a></li>
+                                                              <li><a tabindex="-1" href="#">Chocolatos</a></li>
+                                                              <li><a tabindex="-1" href="#">Hello Panda</a></li>
+                                                              <li><a tabindex="-1" href="#">Milo</a></li>
+                                                            </ul>
+                                                    </li>
+                                                    <li class="dropdown-submenu">
+                                                            <a class="test" tabindex="-1" href="#">Ice Cream Milo <span class="caret"></span></a>
+                                                            <ul class="dropdown-menu">
+                                                              <li><a tabindex="-1" href="#">Tanpa Topping</a></li>
+                                                              <li><a tabindex="-1" href="#">Oreo</a></li>
+                                                              <li><a tabindex="-1" href="#">Chacha</a></li>
+                                                              <li><a tabindex="-1" href="#">Choco Chips</a></li>
+                                                              <li><a tabindex="-1" href="#">Koko Crunch</a></li>
+                                                              <li><a tabindex="-1" href="#">Yuppy</a></li>
+                                                              <li><a tabindex="-1" href="#">Chocolatos</a></li>
+                                                              <li><a tabindex="-1" href="#">Hello Panda</a></li>
+                                                              <li><a tabindex="-1" href="#">Milo</a></li>
+                                                            </ul>
+                                                    </li>
+                                                    <li class="dropdown-submenu">
+                                                            <a class="test" tabindex="-1" href="#">Ice Cream Strawberry <span class="caret"></span></a>
+                                                            <ul class="dropdown-menu">
+                                                              <li><a tabindex="-1" href="#">Tanpa Topping</a></li>
+                                                              <li><a tabindex="-1" href="#">Oreo</a></li>
+                                                              <li><a tabindex="-1" href="#">Chacha</a></li>
+                                                              <li><a tabindex="-1" href="#">Choco Chips</a></li>
+                                                              <li><a tabindex="-1" href="#">Koko Crunch</a></li>
+                                                              <li><a tabindex="-1" href="#">Yuppy</a></li>
+                                                              <li><a tabindex="-1" href="#">Chocolatos</a></li>
+                                                              <li><a tabindex="-1" href="#">Hello Panda</a></li>
+                                                              <li><a tabindex="-1" href="#">Milo</a></li>
+                                                            </ul>
+                                                    </li>
+                                                    <li class="dropdown-submenu">
+                                                            <a class="test" tabindex="-1" href="#">Ice Cream Greentea <span class="caret"></span></a>
+                                                            <ul class="dropdown-menu">
+                                                              <li><a tabindex="-1" href="#">Tanpa Topping</a></li>
+                                                              <li><a tabindex="-1" href="#">Oreo</a></li>
+                                                              <li><a tabindex="-1" href="#">Chacha</a></li>
+                                                              <li><a tabindex="-1" href="#">Choco Chips</a></li>
+                                                              <li><a tabindex="-1" href="#">Koko Crunch</a></li>
+                                                              <li><a tabindex="-1" href="#">Yuppy</a></li>
+                                                              <li><a tabindex="-1" href="#">Chocolatos</a></li>
+                                                              <li><a tabindex="-1" href="#">Hello Panda</a></li>
+                                                              <li><a tabindex="-1" href="#">Milo</a></li>
+                                                            </ul>
+                                                    </li>
+                                                    <li class="dropdown-submenu">
+                                                            <a class="test" tabindex="-1" href="#">Ice Cream Bubble Gum <span class="caret"></span></a>
+                                                            <ul class="dropdown-menu">
+                                                              <li><a tabindex="-1" href="#">Tanpa Topping</a></li>
+                                                              <li><a tabindex="-1" href="#">Oreo</a></li>
+                                                              <li><a tabindex="-1" href="#">Chacha</a></li>
+                                                              <li><a tabindex="-1" href="#">Choco Chips</a></li>
+                                                              <li><a tabindex="-1" href="#">Koko Crunch</a></li>
+                                                              <li><a tabindex="-1" href="#">Yuppy</a></li>
+                                                              <li><a tabindex="-1" href="#">Chocolatos</a></li>
+                                                              <li><a tabindex="-1" href="#">Hello Panda</a></li>
+                                                              <li><a tabindex="-1" href="#">Milo</a></li>
+                                                            </ul>
+                                                      </li>
+                                                  </ul>
+                                                </div>
+                                              <!-- <select name="menu"> -->
+
+
+                                                <!-- <option value="mclassic">Marshmallow Classic Choco</option>
                                                 <option value="mdelight">Marshmallow Strawberry Delight</option>
                                                 <option value="icoreo">Ice Cream Oreo</option>
                                                 <option value="icmilo">Ice Cream Milo</option>
                                                 <option value="icstrawberry">Ice Cream Strawberry</option>
                                                 <option value="icgreentea">Ice Cream Greentea</option>
-                                                <option value="icbubble">Ice Cream Bubble Gum</option>
-                                              </select>
+                                                <option value="icbubble">Ice Cream Bubble Gum</option> -->
+                                              <!-- </select> -->
                                                 <!-- <input name="item" type="text" id="item" required> -->
                                             </label>
-                                            <label for="topping" class="col-sm-4 unique">Topping
+
+                                            <!-- <label for="topping" class="col-sm-4 unique">Topping
                                               <br><br>
                                               <select name="topping">
                                                 <option value="no">Tanpa Topping</option>
@@ -723,7 +819,7 @@
                                                 <option value="milo">Milo</option>
                                               </select>
                                                 <!-- <input name="topping" type="text" id="topping" required> -->
-                                            </label>
+                                            <!-- </label> -->
                                             <label for="people" class="col-sm-4 unique">Jumlah
                                                 <input name="people" type="number" id="people" min="1" required>
                                             </label>
@@ -771,7 +867,7 @@
                             <h2>Buat Pesanan</h2>
                             <h3>Dan Kamelo akan datang ke tempatmu</h3>
 
-                            <form id="booking-form" method="get" action="#">
+                            <form id="delivery-form" method="get" action="#">
                                 <div class="row">
                                     <div class="col-md-10 col-md-push-1">
                                         <div class="row">
@@ -782,7 +878,7 @@
                                                 <input name="number" type="text" id="number" required>
 
                                             </label>
-                                            <label for="item" class="col-sm-4 unique">Item
+                                            <label for="item" class="col-sm-6 unique">Item
                                               <br><br>
                                               <select name="cars">
                                                 <option value="mclassic">Marshmallow Classic Choco</option>
@@ -795,7 +891,7 @@
                                               </select>
                                                 <!-- <input name="item" type="text" id="item" required> -->
                                             </label>
-                                            <label for="topping" class="col-sm-4 unique">Topping
+                                            <label for="topping" class="col-sm-6 unique">Topping
                                               <br><br>
                                               <select name="topping">
                                                 <option value="no">Tanpa Topping</option>
@@ -810,7 +906,7 @@
                                               </select>
                                                 <!-- <input name="topping" type="text" id="topping" required> -->
                                             </label>
-                                            <label for="people" class="col-sm-4 unique">Jumlah
+                                            <label for="people" class="col-sm-6 unique">Jumlah
                                                 <input name="people" type="number" id="people" min="1" required>
                                             </label>
 
@@ -1002,5 +1098,16 @@
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0dSWcBx-VghzhzQB6oCMTgeXMOhCYTvk"></script>
         <script src="assets/js/map.min.js"></script>
         <script src="assets/js/script.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function(){
+              $('.dropdown-submenu a.test').on("click", function(e){
+                $(this).next('ul').toggle();
+                e.stopPropagation();
+                e.preventDefault();
+              });
+            });
+            </script>
     </body>
 </html>
