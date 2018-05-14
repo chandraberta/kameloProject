@@ -1,17 +1,28 @@
 <?php
 class Admin extends CI_Controller {
 
-	function __construct(){
+	public function __construct(){
 		parent::__construct();
+		$this->load->helper('url');
 
 		if($this->session->userdata('status') != "login"){
 			redirect(base_url('login'));
 		}
 	}
 
-	public function index()
-	{
-		$this->load->view('admin');
+	public function index(){
+		//$data['semua'] = $this->admin_model->all();
+		$this->template('admin');
+	}
+
+	private function template($content, $data=null){
+		$data['content'] = $this->load->view($content, $data, true);
+		$this->load->view('template',$data);
+	}
+
+	private function alert($open_tag=null,$close_tag=null,$data=null){
+		if($data!=null) $data = $open_tag.$data.$close_tag;
+		return $data;
 	}
 
 	public function preorder()
