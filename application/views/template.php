@@ -19,19 +19,19 @@
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <a class="navbar-brand" href="index.html">Admin</a>
+    <a class="navbar-brand" href="<?php echo site_url('admin');?>">Admin</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-          <a class="nav-link" href="<?php echo('admin/preorder')?>">
+          <a class="nav-link" href="<?php echo('preorder')?>">
             <span class="nav-link-text">pre-Order</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-          <a class="nav-link" href="<?php echo ('admin/deorder')?>">
+          <a class="nav-link" href="<?php echo ('deorder')?>">
             <span class="nav-link-text">Delivery order</span>
           </a>
         </li>
@@ -43,6 +43,11 @@
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
           <a class="nav-link" href="admin/statPenjualan">
             <span class="nav-link-text">statistik Penjualan</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <a class="nav-link" href="admin/promo">
+            <span class="nav-link-text">Promo</span>
           </a>
         </li>
       </ul>
@@ -62,11 +67,10 @@
         </li>
         <li class="breadcrumb-item active">Navbar</li>
       </ol>
-      <h1>Navbar</h1>
+      
       <hr>
       <?php echo $content;?>
-      <a class="btn btn-primary" href="#" id="toggleNavPosition">Toggle Fixed/Static Navbar</a>
-      <a class="btn btn-primary" href="#" id="toggleNavColor">Toggle Navbar Color</a>
+      
       <!-- Blank div to give the page height to preview the fixed vs. static navbar-->
       <div style="height: 1000px;"></div>
     </div>
