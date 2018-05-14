@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>Pre Order</title>
+  <title>Promo</title>
   <!-- Bootstrap core CSS-->
   <link href="<?php echo base_url('assets/vendor/bootstrap/css/bootstrap.min.css')?>" rel="stylesheet">
   <!-- Custom fonts for this template-->
@@ -46,7 +46,7 @@
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-          <a class="nav-link" href="admin/promo">
+          <a class="nav-link" href="p">
             <span class="nav-link-text">Promo</span>
           </a>
         </li>
@@ -67,11 +67,73 @@
         </li>
         <li class="breadcrumb-item active">Navbar</li>
       </ol>
-      <h1>Ini Halaman statistik penjualan</h1>
+      <h1><li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+        <!-- <a class="nav-link" href="promo">
+          <span class="nav-link-text">Promo</span>
+        </a> -->
+      </li>Promo</h1>
       <hr>
-      <p>The SB Admin navbar can be either fixed or static, and it supports the navbar-light and navbar-dark Bootstrap 4 classes.</p>
+      <div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-table"></i> Data Table Example</div>
+          <section class="content">
+              <div class="row">
+                  <!-- left column -->
+                  <div class="col-md-6">
+                      <!-- general form elements -->
+                      <div class="box box-primary">
+                          <div class="box-header with-border">
+                              <h3 class="box-title">Promo Kamelo</h3>
+                          </div>
+                          <!-- /.box-header -->
+                          <!-- form start -->
+
+                          <form role="form" method="post" enctype="multipart/form-data" action="#">
+                              <div class="box-body">
+
+                                  <?php /*include "config/config.php" ;
+                                  $stmt = $DB_con->prepare('SELECT * FROM promo');
+                                  $stmt->execute();
+                                  $num = 1;
+                                  while($data = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                                      if($num == 1) {
+                                  ?>
+                                  <img src="./user_images/<?php echo $data["gambar"] ?>" style="width:100%" />
+
+                                <?php } $num++;  } */?>
+
+
+                                  <div class="form-group">
+                                      <label for="exampleInputEmail1">Tanggal</label>
+                                      <input type="text" class="form-control" id="tanggal" name="tanggal" placeholder="Tanggal">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="exampleInputPassword1">Judul</label>
+                                      <input type="text" class="form-control" id="judul" name="judul" placeholder="Judul">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="exampleInputPassword1">Deskripsi</label>
+                                      <input type="text" class="form-control" id="deskripsi" name="deskripsi" placeholder="Deskripsi">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="exampleInputFile">File input</label>
+                                      <input type="file" id="user_image" name="user_image">
+
+                                      <p class="help-block">Example block-level help text here.</p>
+                                  </div>
+
+                              </div>
+                              <!-- /.box-body -->
+
+                              <div class="box-footer">
+                                  <button type="submit" id="btnsave" name="btnsave" class="btn btn-primary">Submit</button>
+                              </div>
+                          </form>
+                      </div>
+
+    <!--
       <a class="btn btn-primary" href="#" id="toggleNavPosition">Toggle Fixed/Static Navbar</a>
-      <a class="btn btn-primary" href="#" id="toggleNavColor">Toggle Navbar Color</a>
+      <a class="btn btn-primary" href="#" id="toggleNavColor">Toggle Navbar Color</a>-->
       <!-- Blank div to give the page height to preview the fixed vs. static navbar-->
       <div style="height: 1000px;"></div>
     </div>
