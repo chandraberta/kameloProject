@@ -36,7 +36,7 @@
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-          <a class="nav-link" href="<?php echo ('admin/laporanPenjualan')?>">
+          <a class="nav-link" href="<?php echo ('laporanPenjualan')?>">
             <span class="nav-link-text">Laporan Penjualan</span>
           </a>
         </li>

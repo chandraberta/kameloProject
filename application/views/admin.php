@@ -38,9 +38,9 @@
               <div class="card-body-icon">
                 <i class="fa fa-fw fa-shopping-cart"></i>
               </div>
-              <div class="mr-5">123 Laporan Penjualan</div>
+              <div class="mr-5">Laporan Penjualan</div>
             </div>
-            <a class="card-footer text-white clearfix small z-1" href="#">
+            <a class="card-footer text-white clearfix small z-1" href="<?php echo site_url('deorder');?>">
               <span class="float-left">View Details</span>
               <span class="float-right">
                 <i class="fa fa-angle-right"></i>
@@ -56,7 +56,7 @@
               </div>
               <div class="mr-5">Promo</div>
             </div>
-            <a class="card-footer text-white clearfix small z-1" href="#">
+            <a class="card-footer text-white clearfix small z-1" href="<?php echo site_url('deorder');?>">
               <span class="float-left">View Details</span>
               <span class="float-right">
                 <i class="fa fa-angle-right"></i>
@@ -72,7 +72,7 @@
               </div>
               <div class="mr-5">Pre-Order</div>
             </div>
-            <a class="card-footer text-white clearfix small z-1" href="#">
+            <a class="card-footer text-white clearfix small z-1" href="<?php echo site_url('deorder');?>">
               <span class="float-left">View Details</span>
               <span class="float-right">
                 <i class="fa fa-angle-right"></i>
