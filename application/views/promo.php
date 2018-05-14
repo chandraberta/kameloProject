@@ -88,10 +88,10 @@
                           <!-- /.box-header -->
                           <!-- form start -->
 
-                          <form role="form" method="post" enctype="multipart/form-data" action="#">
+                          <form role="form" method="post" enctype="multipart/form-data" action="promo/promo">
                               <div class="box-body">
 
-                                  <?php /*include "config/config.php" ;
+                                  <?php /*include "model/promo_model" ;
                                   $stmt = $DB_con->prepare('SELECT * FROM promo');
                                   $stmt->execute();
                                   $num = 1;
@@ -100,7 +100,7 @@
                                   ?>
                                   <img src="./user_images/<?php echo $data["gambar"] ?>" style="width:100%" />
 
-                                <?php } $num++;  } */?>
+                                <?php } $num++;  }*/ ?>
 
 
                                   <div class="form-group">

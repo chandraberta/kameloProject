@@ -48,7 +48,7 @@
             <header class="header">
                 <nav class="navbar navbar-default navbar-fixed-top">
                     <div class="container">
-                        <div class="navbar-header"><a href="http://localhost/kamelo/" class="navbar-brand"><img src="<?php echo base_url('assets/img/logo1.png')?>" alt="Kamelo" width="80"></a>
+                        <div class="navbar-header"><a href="http://localhost/kamelo/" class="navbar-brand"><img src="<?php echo base_url('assets/img/logo1.png')?>" alt="Kamelo" width="150"></a>
                             <div class="navbar-buttons">
                                 <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle navbar-btn">Menu<i class="fa fa-align-justify"></i></button>
                             </div>
@@ -144,15 +144,15 @@
                                 <p>Hubungi kami untuk</p>
                                 <h5>Delivery dalam kota</h5>
                             </div>
-                            <a href="tel:9870988764" class="phone">0819</a>
+                            <a href="tel:9870988764" class="phone">0856 4640 7073</a>
                         </div>
 
                         <div class="col-sm-6">
                             <div class="heading text-center">
-                                <p>Check Our Clients'</p>
-                                <h5>Rating &amp; Reviews</h5>
+                                <p>Cek IG kami</p>
+                                <h5>Untuk melihat keseruan Kamelo</h5>
                             </div>
-                            <a href="#" class="reviews btn-unique"><i class="fa fa-angle-right"></i></a>
+                            <a href="https://www.instagram.com/kameloku/" class="reviews btn-unique"><i class="fa fa-angle-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -549,11 +549,14 @@
                     <div class="row">
                         <!-- Profile Side  -->
                         <div class="col-sm-6">
-                            <div class="profile has-border" style="background-image: url('assets/img/event-bg.png');">
+
+                            <div class="profile has-border" style="background-image: url('assets/img/event-bg.png');" >
+
                                 <ul class="date list-unstyled list-inline clearfix">
-                                    <li class="day pull-left">21<sup>th</sup></li>
+                                    <li class="day pull-left">21</li>
                                     <li class="month pull-left">April <span>2018</span></li>
                                 </ul>
+
                             </div>
                         </div>
 
@@ -697,10 +700,10 @@
                                                 <input name="number" type="text" id="number" required>
                                                 <br><br>
                                             </label>
-                                            <label for="item" class="col-sm-4 unique">Item
+                                            <label for="item" class="col-sm-6 unique">Item
                                               <br><br>
-                                              <div class="dropdown">
-                                                  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Item
+                                              <!--<div class="dropdown">
+                                                   <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Item
                                                   <span class="caret"></span></button>
                                                   <ul class="dropdown-menu">
 
@@ -790,22 +793,22 @@
                                                             </ul>
                                                       </li>
                                                   </ul>
-                                                </div>
-                                              <!-- <select name="menu"> -->
+                                                </div> -->
+                                              <select name="menu">
 
 
-                                                <!-- <option value="mclassic">Marshmallow Classic Choco</option>
+                                                <option value="mclassic">Marshmallow Classic Choco</option>
                                                 <option value="mdelight">Marshmallow Strawberry Delight</option>
                                                 <option value="icoreo">Ice Cream Oreo</option>
                                                 <option value="icmilo">Ice Cream Milo</option>
                                                 <option value="icstrawberry">Ice Cream Strawberry</option>
                                                 <option value="icgreentea">Ice Cream Greentea</option>
-                                                <option value="icbubble">Ice Cream Bubble Gum</option> -->
-                                              <!-- </select> -->
+                                                <option value="icbubble">Ice Cream Bubble Gum</option>
+                                               </select>
                                                 <!-- <input name="item" type="text" id="item" required> -->
                                             </label>
 
-                                            <!-- <label for="topping" class="col-sm-4 unique">Topping
+                                            <label for="topping" class="col-sm-6 unique">Topping
                                               <br><br>
                                               <select name="topping">
                                                 <option value="no">Tanpa Topping</option>
@@ -818,9 +821,10 @@
                                                 <option value="hellopanda">Hello Panda</option>
                                                 <option value="milo">Milo</option>
                                               </select>
+                                              <br><br>
                                                 <!-- <input name="topping" type="text" id="topping" required> -->
-                                            <!-- </label> -->
-                                            <label for="people" class="col-sm-4 unique">Jumlah
+                                            </label>
+                                            <label for="people" class="col-sm-6 unique">Jumlah
                                                 <input name="people" type="number" id="people" min="1" required>
                                             </label>
 
@@ -987,9 +991,9 @@
                                 <h6>Kontak</h6>
                             </div>
                             <ul class="contact list-unstyled">
-                                <li><span class="icon-map text-primary"></span>Jalan Kaki Kediri</li>
-                                <li><a href="mailto:meilryreinadhee@gmail.com"><span class="icon-phone text-primary"></span>kamelo@gmail.com</a></li>
-                                <li><span class="icon-mail text-primary"></span>0819 0000 000</li>
+                                <li><span class="icon-map text-primary"></span>Jalan Veteran 40, Kediri</li>
+                                <li><a href="mailto:meilryreinadhee@gmail.com"><span class="icon-mail text-primary"></span>kamelo@gmail.com</a></li>
+                                <li><span class="icon-phone text-primary"></span>0856 4640 7073</li>
 
                             </ul>
                         </div>
