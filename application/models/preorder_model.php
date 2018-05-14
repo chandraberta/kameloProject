@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('NO direct script access allowed');
-class produkModel extends CI_Model{
+class preorder_model extends CI_Model{
 
 	public function __construct(){
 		parent::__construct();
