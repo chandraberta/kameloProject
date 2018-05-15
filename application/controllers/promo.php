@@ -99,3 +99,4 @@ class promo extends CI_Controller{
         }
     }
   }
+}

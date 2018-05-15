@@ -22,4 +22,9 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('beli');
 	}
+        
+        public function test() {
+             $this->load->library('unitTest');
+        }
+       
 }
