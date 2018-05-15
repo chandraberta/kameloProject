@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('NO direct script access allowed');
-class promo_model extends CI_Model{
+class statPenjualan_model extends CI_Model{
 
 	public function __construct(){
 		parent::__construct();
@@ -8,41 +8,20 @@ class promo_model extends CI_Model{
 	}
 
 	public function all(){
-<<<<<<< HEAD
-		return $this->db->get('promo');
-=======
 		return $this->db->get('preorder');
->>>>>>> 7e0a427e7d1347ba3b49ecb5eaf0d6b9626501c1
 	}
 
 	public function getWhere($where){
 		$this->db->where($where);
-<<<<<<< HEAD
-		return $this->db->get('promo');
-	}
-
-	public function insert($data){
-		return $this->db->insert('promo',$data);
-=======
 		return $this->db->get('preorder');
 	}
 
 	public function insert($data){
 		return $this->db->insert('preorder',$data);
->>>>>>> 7e0a427e7d1347ba3b49ecb5eaf0d6b9626501c1
 	}
 
 	public function update($data, $where){
 		$this->db->where($where);
-<<<<<<< HEAD
-		return $this->db->update('promo',$data);
-	}
-
-	public function delete($where){
-		return $this->db->delete('promo',$where);
-	}
-}
-=======
 		return $this->db->update('preorder',$data);
 	}
 
@@ -50,4 +29,3 @@ class promo_model extends CI_Model{
 		return $this->db->delete('preorder',$where);
 	}
 }
->>>>>>> 7e0a427e7d1347ba3b49ecb5eaf0d6b9626501c1

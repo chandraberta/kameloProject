@@ -1,4 +1,4 @@
-<h1>Delivery Order</h1>
+<h1>Laporan Penjualan</h1>
 
 <div class="col-md-12">
   <h2 align="center">Tabel Produk</h2><br>

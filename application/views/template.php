@@ -41,12 +41,12 @@
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-          <a class="nav-link" href="admin/statPenjualan">
+          <a class="nav-link" href="<?php echo ('statPenjualan')?>">
             <span class="nav-link-text">statistik Penjualan</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-          <a class="nav-link" href="admin/promo">
+          <a class="nav-link" href="<?php echo ('promo')?>">
             <span class="nav-link-text">Promo</span>
           </a>
         </li>
@@ -63,9 +63,9 @@
       <!-- Breadcrumbs-->
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <a href="#">Dashboard</a>
+          <a href="<?php echo site_url('admin');?>">Dashboard</a>
         </li>
-        <li class="breadcrumb-item active">Navbar</li>
+        
       </ol>
       
       <hr>

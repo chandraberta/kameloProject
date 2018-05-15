@@ -1,17 +1,17 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-class Promo extends CI_Controller{
+class statPenjualan extends CI_Controller{
 	
 	private $alert = '';
 	public function __construct(){
 		parent::__construct();
 		$this->load->helper('url');
-		$this->load->model('promo_model');
+		$this->load->model('statPenjualan_model');
 	}
 
 	public function index(){
-		$data['semua'] = $this->promo_model->all();
-		$this->template('promo',$data);
+		$data['semua'] = $this->statPenjualan_model->all();
+		$this->template('statPenjualan',$data);
 	}
 
 	private function template($content, $data=null){
@@ -63,7 +63,7 @@ class Promo extends CI_Controller{
 
 		}
 	public function hapus(){
-			if($this->uri->segment(3)) $this->promo_model->delete(array('id_order'=>$this->uri->segment(3)));
-			redirect('promo');
+			if($this->uri->segment(3)) $this->statPenjualan_model->delete(array('id_order'=>$this->uri->segment(3)));
+			redirect('statPenjualan');
 		}
 }
