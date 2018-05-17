@@ -8,6 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <title>Admin kamelo</title>
+  <link rel="shortcut icon" href="assets/img/favicon.png">
   <!-- Bootstrap core CSS-->
   <link href="<?php echo base_url('assets/admin/vendor/bootstrap/css/bootstrap.min.css')?>" rel="stylesheet">
   <!-- Custom fonts for this template-->

@@ -1,11 +1,15 @@
 <h1>Delivery Order</h1>
 
 <div class="col-md-12">
-  <h2 align="center">Tabel Produk</h2><br>
+  <br>
 </div>
 
-<div class="col-md-12">
-  <table class="table table-stripped">
+<div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-table"></i></div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
     <tr>
                   <th>No order</th>
                   <th>Nama Customer</th>
@@ -13,6 +17,7 @@
                   <th>Topping</th>
                   <th>Jumlah</th>
                   <th>No HP</th>
+                  <th>Alamat</th>
                   <th>Action</th>
                 </tr>
               </thead>
@@ -21,15 +26,16 @@
               foreach ($semua->result_array() as $d) {
                 $n++;?>
                 <tr>
-                  <td><?php echo $n;?></td>
+                  <td><?php echo $d['id_order'];?></td>
                   <td><?php echo $d['nama_cust'];?></td>
                   <td><?php echo $d['item'];?></td>
                   <td><?php echo $d['topping'];?></td>
                   <td><?php echo $d['jumlah'];?></td>
                   <td><?php echo $d['no_hp'];?></td>
+                  <td><?php echo $d['alamat'];?></td>
                   <td>
-                  <a href="<?php echo site_url('preorder');?>" class="btn btn-primary pull-left">Terima</a>
-                  <a href="<?php echo site_url('preorder/hapus/'.$d['id_order']);?>"
+                  <a href="<?php echo site_url('deorder');?>" class="btn btn-primary pull-left">Terima</a>
+                  <a href="<?php echo site_url('deorder/hapus/'.$d['id_order']);?>"
                   class="btn btn-danger">Hapus</a>
 
                 </td>
@@ -37,5 +43,8 @@
                 <?php } ?>
               </tbody>
   </table>
-  <a href="<?php echo site_url('preorder');?>" class="btn btn-primary pull-left">Tambah</a>
+</div>
+<a href="<?php echo site_url('preorder');?>" class="btn btn-success pull-left">Tambah</a>
     </div>
+</div></div>
+  

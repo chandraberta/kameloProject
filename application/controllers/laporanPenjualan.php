@@ -6,6 +6,11 @@ class laporanPenjualan extends CI_Controller{
 	public function __construct(){
 		parent::__construct();
 		$this->load->helper('url');
+
+		/*if($this->session->userdata('status') != "login"){
+			redirect(base_url('login'));*/
+
+
 		$this->load->model('laporanPenjualan_model');
 	}
 
@@ -63,7 +68,7 @@ class laporanPenjualan extends CI_Controller{
 
 		}
 	public function hapus(){
-			if($this->uri->segment(3)) $this->laporanPenjualan_model->delete(array('id_order'=>$this->uri->segment(3)));
+			if($this->uri->segment(3)) $this->laporanPenjualan_model->delete(array('tanggal'=>$this->uri->segment(3)));
 			redirect('laporanPenjualan');
 		}
 }
