@@ -688,20 +688,20 @@
                             <h2>Buat Pesanan</h2>
                             <h3>Dan nikmati kamelomu</h3>
 
-                            <form id="booking-form" method="get" action="promo.php">
+                            <form id="booking-form" method="post" action="preorderform/form">
                                 <div class="row">
                                     <div class="col-md-10 col-md-push-1">
                                         <div class="row">
-                                            <label for="name" class="col-sm-6 unique">Nama
-                                                <input name="name" type="text" id="name" required>
+                                            <label for="nama_cust" class="col-sm-6 unique">Nama
+                                                <input name="nama_cust" type="text" id="nama_cust" required>
 
                                             </label>
-                                            <label for="number" class="col-sm-6 unique">No Hp
-                                                <input name="number" type="number" id="number" required>
+                                            <label for="no_hp" class="col-sm-6 unique">No Hp
+                                                <input name="no_hp" type="number" id="no_hp" required>
                                                 <br><br>
 
                                             </label>
-                                            <label for="item" class="col-sm-6 unique">Item
+                                            <label for="id_item" class="col-sm-6 unique">Item
                                               <br><br>
                                               <!--<div class="dropdown">
                                                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Item
@@ -795,42 +795,42 @@
                                                       </li>
                                                   </ul>
                                                 </div> -->
-                                              <select name="menu">
+                                              <select name="id_item">
 
 
-                                                <option value="mclassic">Marshmallow Classic Choco</option>
-                                                <option value="mdelight">Marshmallow Strawberry Delight</option>
-                                                <option value="icoreo">Ice Cream Oreo</option>
-                                                <option value="icmilo">Ice Cream Milo</option>
-                                                <option value="icstrawberry">Ice Cream Strawberry</option>
-                                                <option value="icgreentea">Ice Cream Greentea</option>
-                                                <option value="icbubble">Ice Cream Bubble Gum</option>
+                                                <option value="1">Marshmallow Classic Choco</option>
+                                                <option value="2">Marshmallow Strawberry Delight</option>
+                                                <option value="3">Ice Cream Oreo</option>
+                                                <option value="4">Ice Cream Milo</option>
+                                                <option value="5">Ice Cream Strawberry</option>
+                                                <option value="6">Ice Cream Greentea</option>
+                                                <option value="7">Ice Cream Bubble Gum</option>
                                                </select>
                                                 <!-- <input name="item" type="text" id="item" required> -->
                                             </label>
 
-                                            <label for="topping" class="col-sm-6 unique">Topping
+                                            <label for="id_topping" class="col-sm-6 unique">Topping
                                               <br><br>
-                                              <select name="topping">
-                                                <option value="no">Tanpa Topping</option>
-                                                <option value="oreo">Oreo</option>
-                                                <option value="chacha">Chacha</option>
-                                                <option value="chocochips">Choco Chips</option>
-                                                <option value="kokokeunch">Koko Crunch</option>
-                                                <option value="yuppy">Yuppy</option>
-                                                <option value="chocolatos">Chocolatos</option>
-                                                <option value="hellopanda">Hello Panda</option>
-                                                <option value="milo">Milo</option>
+                                              <select name="id_topping">
+                                                <option value="1">Tanpa Topping</option>
+                                                <option value="2">Oreo</option>
+                                                <option value="3">Chacha</option>
+                                                <option value="4">Choco Chips</option>
+                                                <option value="5">Koko Crunch</option>
+                                                <option value="6">Yuppy</option>
+                                                <option value="7">Chocolatos</option>
+                                                <option value="8">Hello Panda</option>
+                                                <option value="9">Milo</option>
                                               </select>
                                               <br><br>
                                                 <!-- <input name="topping" type="text" id="topping" required> -->
                                             </label>
-                                            <label for="people" class="col-sm-6 unique">Jumlah
-                                                <input name="people" type="number" id="people" min="1" required>
+                                            <label for="jumlah" class="col-sm-6 unique">Jumlah
+                                                <input name="jumlah" type="number" id="jumlahr" min="1" required>
                                             </label>
 
-                                            <label for="date" class="col-sm-12 unique">Tanggal Ambil
-                                                <input name="date" type="text" id="date" class="datepicker-here" data-language='en' required>
+                                            <label for="tanggal" class="col-sm-12 unique">Tanggal Ambil
+                                                <input name="tanggal" type="text" id="tanggal" class="datepicker-here" data-date-format='yyyy-mm-dd' data-language='en' required>
                                             </label>
                                             <!-- <label for="time" class="col-sm-6 unique">Time
                                                 <input name="time" type="text" id="time" class="timepicker" required>
@@ -872,7 +872,7 @@
                             <h2>Buat Pesanan</h2>
                             <h3>Dan Kamelo akan datang ke tempatmu</h3>
 
-                            <form id="delivery-form" method="get" action="#">
+                            <form id="delivery-form" method="post" action="#">
                                 <div class="row">
                                     <div class="col-md-10 col-md-push-1">
                                         <div class="row">
@@ -886,28 +886,28 @@
                                             <label for="item" class="col-sm-6 unique">Item
                                               <br><br>
                                               <select name="cars">
-                                                <option value="mclassic">Marshmallow Classic Choco</option>
-                                                <option value="mdelight">Marshmallow Strawberry Delight</option>
-                                                <option value="icoreo">Ice Cream Oreo</option>
-                                                <option value="icmilo">Ice Cream Milo</option>
-                                                <option value="icstrawberry">Ice Cream Strawberry</option>
-                                                <option value="icgreentea">Ice Cream Greentea</option>
-                                                <option value="icbubble">Ice Cream Bubble Gum</option>
+                                                <option value="Marshmallow Classic Choco">Marshmallow Classic Choco</option>
+                                                <option value="Marshmallow Strawberry Delight">Marshmallow Strawberry Delight</option>
+                                                <option value="Ice Cream Oreo">Ice Cream Oreo</option>
+                                                <option value="Ice Cream Milo">Ice Cream Milo</option>
+                                                <option value="Ice Cream Strawberry">Ice Cream Strawberry</option>
+                                                <option value="Ice Cream Greentea">Ice Cream Greentea</option>
+                                                <option value="Ice Cream Bubble Gum">Ice Cream Bubble Gum</option>
                                               </select>
                                                 <!-- <input name="item" type="text" id="item" required> -->
                                             </label>
                                             <label for="topping" class="col-sm-6 unique">Topping
                                               <br><br>
                                               <select name="topping">
-                                                <option value="no">Tanpa Topping</option>
-                                                <option value="oreo">Oreo</option>
-                                                <option value="chacha">Chacha</option>
-                                                <option value="chocochips">Choco Chips</option>
-                                                <option value="kokokeunch">Koko Crunch</option>
-                                                <option value="yuppy">Yuppy</option>
-                                                <option value="chocolatos">Chocolatos</option>
-                                                <option value="hellopanda">Hello Panda</option>
-                                                <option value="milo">Milo</option>
+                                                <option value="Tanpa Topping">Tanpa Topping</option>
+                                                <option value="Oreo">Oreo</option>
+                                                <option value="Chacha">Chacha</option>
+                                                <option value="Choco Chips">Choco Chips</option>
+                                                <option value="Koko Crunch">Koko Crunch</option>
+                                                <option value="Yuppy">Yuppy</option>
+                                                <option value="Chocolatos">Chocolatos</option>
+                                                <option value="Hello Panda">Hello Panda</option>
+                                                <option value="Milo">Milo</option>
                                               </select>
                                                 <!-- <input name="topping" type="text" id="topping" required> -->
                                             </label>

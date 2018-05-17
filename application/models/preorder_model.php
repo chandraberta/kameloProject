@@ -7,6 +7,11 @@ class preorder_model extends CI_Model{
 		$this->load->database();
 	}
 
+	function getData(){
+			$res = $this->db->get('preorder');
+			return $res->result_array();
+	}
+
 	public function all(){
 		return $this->db->get('preorder');
 	}
@@ -20,9 +25,15 @@ class preorder_model extends CI_Model{
 		return $this->db->insert('preorder',$data);
 	}
 
+	function form_insert($table, $data){
+			//$this->db->set($data);
+			$res = $this->db->insert($table,$data);
+			return $res;
+	}
+
 	public function update($data, $where){
 		$this->db->where($where);
-		
+
 		return $this->db->update('preorder',$data);
 	}
 

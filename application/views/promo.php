@@ -14,7 +14,7 @@
                           <!-- /.box-header -->
                           <!-- form start -->
 
-                          <form role="form" method="post" enctype="multipart/form-data" action="promo/promo">
+                          <form role="form" method="post" enctype="multipart/form-data" action="Promo.php">
                               <div class="box-body">
 
                                   <?php /*include "model/promo_model" ;

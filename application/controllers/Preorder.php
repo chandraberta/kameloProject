@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 class preorder extends CI_Controller{
-	
+
 	private $alert = '';
 	public function __construct(){
 		parent::__construct();
@@ -31,15 +31,16 @@ class preorder extends CI_Controller{
 
 	public function form(){
 		if($this->input->post('simpan')){
-			$array = array('nama_produk'=>$this->input->post('nama_produk'),
-							'brand'=>$this->input->post('brand'),
-							'deskripsi'=>$this->input->post('deskripsi'),
-							'barcode'=>$this->input->post('barcode'),
-							'harga'=>$this->input->post('harga'),
+			$array = array('nama_cust'=>$this->input->post('nama_cust'),
+							'no_hp'=>$this->input->post('no_hp'),
+							'item'=>$this->input->post('item'),
+							'topping'=>$this->input->post('topping'),
+							'jumlah'=>$this->input->post('jumlah'),
+							'tanggal'=>$this->input->post('tanggal'),
 						);
 
 			if($this->input->post('id')==''){
-				if($this->produkModel->insert($array)){
+				if($this->preorder_model->insert($array)){
 					?>
 					<script>window.alert('Sukses Tersimpan');</script>
 					<?php
@@ -49,10 +50,10 @@ class preorder extends CI_Controller{
 				}
 
 				}else{
-					if($this->produkModel->update($array,array('id_produk'=>$this->input->post('id')))){
+					if($this->preorder_model->update($array,array('id_order'=>$this->input->post('id')))){
 					?>
 						<script>window.alert('Sukses Tersimpan');</script>data
-						<?php 
+						<?php
 						redirect('produk','refresh');
 
 					} else{
@@ -61,10 +62,10 @@ class preorder extends CI_Controller{
 			}
 
 		}
-		$data['venus'] = $this->produkModel->getWhere(array('id_produk'=>$this->uri->segment(3)))->row_array();
+		$data['venus'] = $this->preorder_model->getWhere(array('id_order'=>$this->uri->segment(3)))->row_array();
 
 		$data['alert'] = $this->alert;
-		$this->template('form',$data);
+		$this->template('produk',$data);
 
 		}
 	public function hapus(){
