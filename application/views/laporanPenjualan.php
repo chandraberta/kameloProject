@@ -7,12 +7,11 @@
 <div class="col-md-12">
   <table class="table table-stripped">
     <tr>
-                  <th>No order</th>
-                  <th>Nama Customer</th>
+                  <th>Tanggal</th>
                   <th>Item</th>
                   <th>Topping</th>
-                  <th>Jumlah</th>
-                  <th>No HP</th>
+                  <th>Jumlah Pembelian</th>
+                  <th>Total Pembelian</th>
                   <th>Action</th>
                 </tr>
               </thead>
@@ -37,5 +36,5 @@
                 <?php } ?>
               </tbody>
   </table>
-  <a href="<?php echo site_url('preorder');?>" class="btn btn-primary pull-left">Tambah</a>
+  <a href="<?php echo site_url('preorder');?>" class="btn btn-success pull-left">Tambah</a>
     </div>
