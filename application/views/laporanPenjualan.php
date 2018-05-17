@@ -39,7 +39,19 @@
               </tbody>
       </table>
     </div>
-    <a href="<?php echo site_url('preorder');?>" class="btn btn-success pull-left">Tambah</a>
+
+
+    <button type="button" class="btn btn-success pull-left" data-toggle="modal" data-target="#tambah"></button>
+    <div id="tambah" class="modal fade" role="dialog">
+      <div id="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"></button>
+                  <h4 class="modal-title">Tambah Laporan Offline</h4>
+              </div>
+          </div>
+      </div>
+    </div>
   </div>
 
 </div>

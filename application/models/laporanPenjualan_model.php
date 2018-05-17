@@ -21,6 +21,7 @@ class laporanPenjualan_model extends CI_Model{
 	}
 
 	public function update($data, $where){
+		//$this->db->query('')
 		$this->db->where($where);
 		return $this->db->update('laporan_keuangan',$data);
 	}
