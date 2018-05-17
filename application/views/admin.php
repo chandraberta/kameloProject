@@ -56,7 +56,7 @@
               </div>
               <div class="mr-5">Promo</div>
             </div>
-            <a class="card-footer text-white clearfix small z-1" href="<?php echo site_url('deorder');?>">
+            <a class="card-footer text-white clearfix small z-1" href="<?php echo site_url('promo');?>">
               <span class="float-left">View Details</span>
               <span class="float-right">
                 <i class="fa fa-angle-right"></i>

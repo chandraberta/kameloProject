@@ -552,10 +552,9 @@
 
                             <div class="profile has-border" style="background-image: url('assets/img/event-bg.png');" >
 
-                                <ul class="date list-unstyled list-inline clearfix">
-                                    <li class="day pull-left">21</li>
-                                    <li class="month pull-left">April <span>2018</span></li>
-                                </ul>
+                                  <a href="assets/img/event-bg.png" data-lightbox="image-1" data-title="Image Caption" class="has-border" width="150">
+                                      <span class="icon-search"></span>
+                                  </a>
 
                             </div>
                         </div>
@@ -689,16 +688,18 @@
                             <h2>Buat Pesanan</h2>
                             <h3>Dan nikmati kamelomu</h3>
 
-                            <form id="booking-form" method="get" action="#">
+                            <form id="booking-form" method="get" action="promo.php">
                                 <div class="row">
                                     <div class="col-md-10 col-md-push-1">
                                         <div class="row">
                                             <label for="name" class="col-sm-6 unique">Nama
                                                 <input name="name" type="text" id="name" required>
+
                                             </label>
                                             <label for="number" class="col-sm-6 unique">No Hp
-                                                <input name="number" type="text" id="number" required>
+                                                <input name="number" type="number" id="number" required>
                                                 <br><br>
+
                                             </label>
                                             <label for="item" class="col-sm-6 unique">Item
                                               <br><br>

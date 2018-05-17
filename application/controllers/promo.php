@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 class Promo extends CI_Controller{
-	
+
 	private $alert = '';
 	public function __construct(){
 		parent::__construct();
@@ -47,7 +47,7 @@ class Promo extends CI_Controller{
 					if($this->produkModel->update($array,array('id_produk'=>$this->input->post('id')))){
 					?>
 						<script>window.alert('Sukses Tersimpan');</script>data
-						<?php 
+						<?php
 						redirect('produk','refresh');
 
 					} else{
@@ -66,4 +66,31 @@ class Promo extends CI_Controller{
 			if($this->uri->segment(3)) $this->promo_model->delete(array('id_order'=>$this->uri->segment(3)));
 			redirect('promo');
 		}
+
+				// Initializing Error Variables To Null.
+		/*$nameError ="";
+		$numberError ="";
+		// This code block will execute when form is submitted
+		if(isset($_POST['submit'])){
+		/*--------------------------------------------------------------
+		Fetch name value from URL and Sanitize it
+		--------------------------------------------------------------*/
+		/*if($_POST['name'] != ""){
+		// Sanitizing name value of type string
+			$_POST['name'] = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+			$nameError = "<span class="valid">"".$_POST['name']."" </span>is Sanitized an Valid name.";
+			if ($_POST['name'] == ""){
+			$nameError = "<span class="invalid">Please enter a valid name.</span>";
+			}
+		}
+		else {
+			$nameError = "<span class="invalid">Please enter your name.</span>";
+		}
+
+		if ($_POST['number'] != ""){
+				$_POST['number'] = filter_var($_POST['number'], FILTER_VALIDATE_INT)
+    		echo("Integer is valid");
+		} else {
+		    echo("Integer is not valid");
+		}*/
 }
