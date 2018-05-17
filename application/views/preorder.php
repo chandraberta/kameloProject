@@ -46,6 +46,5 @@
 <a href="<?php echo site_url('preorder');?>" class="btn btn-success pull-left">Tambah</a>
 </div>
 </div>
-  
-    </div>
 
+    </div>
