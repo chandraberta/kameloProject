@@ -22,6 +22,7 @@ class preorder_model extends CI_Model{
 
 	public function update($data, $where){
 		$this->db->where($where);
+		
 		return $this->db->update('preorder',$data);
 	}
 

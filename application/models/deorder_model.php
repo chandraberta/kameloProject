@@ -8,24 +8,24 @@ class deorder_model extends CI_Model{
 	}
 
 	public function all(){
-		return $this->db->get('preorder');
+		return $this->db->get('deorder');
 	}
 
 	public function getWhere($where){
 		$this->db->where($where);
-		return $this->db->get('preorder');
+		return $this->db->get('deorder');
 	}
 
 	public function insert($data){
-		return $this->db->insert('preorder',$data);
+		return $this->db->insert('deorder',$data);
 	}
 
 	public function update($data, $where){
 		$this->db->where($where);
-		return $this->db->update('preorder',$data);
+		return $this->db->update('deorder',$data);
 	}
 
 	public function delete($where){
-		return $this->db->delete('preorder',$where);
+		return $this->db->delete('deorder',$where);
 	}
 }

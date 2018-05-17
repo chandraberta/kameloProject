@@ -68,7 +68,7 @@ class laporanPenjualan extends CI_Controller{
 
 		}
 	public function hapus(){
-			if($this->uri->segment(3)) $this->laporanPenjualan_model->delete(array('id_order'=>$this->uri->segment(3)));
+			if($this->uri->segment(3)) $this->laporanPenjualan_model->delete(array('tanggal'=>$this->uri->segment(3)));
 			redirect('laporanPenjualan');
 		}
 }
