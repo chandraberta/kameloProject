@@ -30,45 +30,56 @@ class laporanPenjualan extends CI_Controller{
 	}
 
 	public function form(){
-		if($this->input->post('simpan')){
-			$array = array('nama_produk'=>$this->input->post('nama_produk'),
-							'brand'=>$this->input->post('brand'),
-							'deskripsi'=>$this->input->post('deskripsi'),
-							'barcode'=>$this->input->post('barcode'),
-							'harga'=>$this->input->post('harga'),
-						);
+			
+		}
+		$data['manual'] = $this->laporanPenjualan_model->getWhere(array('tanggal'=>$this->uri->segment(3)))->row_array();
 
-			if($this->input->post('id')==''){
-				if($this->produkModel->insert($array)){
+		$data['alert'] = $this->alert;
+		$this->template('laporanPenjualan',$data);
+
+		}
+
+	public function hapus(){
+			if($this->uri->segment(3)) $this->laporanPenjualan_model->delete(array('tanggal'=>$this->uri->segment(3)));
+			redirect('laporanPenjualan');
+		}
+
+	public function tambah_manual(){
+		$this->load->view('tambah_manual');
+	}
+
+	/*public function Simpan(){
+		$manual = array(
+			'tanggal'	=>$this->input->post('tanggal'),
+			'id_item'		=>$this->input->post('id_item'),
+			'id_topping'	=>$this->input->post('id_topping'),
+			'jumlah'	=>$this->input->post('jumlah')
+		);
+		var_dump($manual);
+		$this->laporanPenjualan_model->simpan($manual);
+		$this->index();
+
+		if($this->input->post('tanggal')==''){
+				if($this->laporanPenjualan_model->insert($manual)){
 					?>
 					<script>window.alert('Sukses Tersimpan');</script>
 					<?php
-					redirect('produk','refresh');
+					redirect('laporanPenjualan','refresh');
 				}else{
 					$this->alert = $this->alert("<p class='alert alert-danger'>","</p>","Gagal Menyimpan");
 				}
 
 				}else{
-					if($this->produkModel->update($array,array('id_produk'=>$this->input->post('id')))){
+					if($this->laporanPenjualan_model->update($manual,array('tanggal'=>$this->input->post('tanggal')))){
 					?>
 						<script>window.alert('Sukses Tersimpan');</script>data
 						<?php 
-						redirect('produk','refresh');
+						redirect('laporanPenjualan','refresh');
 
 					} else{
 						$this->alert = $this->alert("<p class='alert alert-danger'>","</p","Gagal Menyimpan");
 				}
 			}
 
-		}
-		$data['venus'] = $this->produkModel->getWhere(array('id_produk'=>$this->uri->segment(3)))->row_array();
-
-		$data['alert'] = $this->alert;
-		$this->template('form',$data);
-
-		}
-	public function hapus(){
-			if($this->uri->segment(3)) $this->laporanPenjualan_model->delete(array('tanggal'=>$this->uri->segment(3)));
-			redirect('laporanPenjualan');
-		}
+	}*/
 }
