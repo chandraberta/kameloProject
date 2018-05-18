@@ -46,7 +46,7 @@ class laporanPenjualan extends CI_Controller{
 		}
 
 	public function hapus(){
-			if($this->uri->segment(3)) $this->laporanPenjualan_model->delete(array('tanggal'=>$this->uri->segment(3)));
+			if($this->uri->segment(3)) $this->laporanPenjualan_model->delete(array('id'=>$this->uri->segment(3)));
 			redirect('laporanPenjualan');
 		}
 
@@ -61,6 +61,10 @@ class laporanPenjualan extends CI_Controller{
 		$jumlah_pembelian=$this->input->post('jumlah_pembelian');
 		$this->laporanPenjualan_model->simpan_penjualan($tanggal, $id_item, $id_topping, $jumlah_pembelian);
 		redirect('laporanPenjualan');
+	}
+
+	function update_item(){
+		$data['semua'] = $this->laporanPenjualan_model->update_item();
 	}
 
 	/*public function Simpan(){

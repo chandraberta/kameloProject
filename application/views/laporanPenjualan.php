@@ -40,7 +40,7 @@
                   <td><?php echo $d['jumlah_pembelian'];?></td>
                   <td><?php echo $d['total_pembelian'];?></td>
                   <td>
-                  <a href="<?php echo site_url('laporanPenjualan/hapus/'.$d['tanggal']);?>"
+                  <a href="<?php echo site_url('laporanPenjualan/hapus/'.$d['id']);?>"
                   class="btn btn-danger">Hapus</a>
 
                 </td>
