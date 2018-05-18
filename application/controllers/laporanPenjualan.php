@@ -30,12 +30,18 @@ class laporanPenjualan extends CI_Controller{
 	}
 
 	public function form(){
-			
-		}
-		$data['manual'] = $this->laporanPenjualan_model->getWhere(array('tanggal'=>$this->uri->segment(3)))->row_array();
+			$data = array(
+                'tanggal'=>$this->input->post('tanggal'),
+                'id_item'=>$this->input->post('id_item'),
+                'id_topping'=>$this->input->post('id_topping'),
+                'jumlah_pembelian'=>$this->input->post('jumlah_pembelian')
+              );
 
-		$data['alert'] = $this->alert;
-		$this->template('laporanPenjualan',$data);
+      $result = $this->laporanPenjualan_model->form_insert('laporan_keuangan',$data);
+      if($result >= 1)
+      {
+        redirect(base_url('laporanPenjualan'));
+      }
 
 		}
 
@@ -46,6 +52,15 @@ class laporanPenjualan extends CI_Controller{
 
 	public function tambah_manual(){
 		$this->load->view('tambah_manual');
+	}
+
+	public function simpan_penjualan(){
+		$tanggal=$this->input->post('tanggal');
+		$id_item=$this->input->post('id_item');
+		$id_topping=$this->input->post('id_post');
+		$jumlah_pembelian=$this->input->post('jumlah_pembelian');
+		$this->laporanPenjualan_model->simpan_penjualan($tanggal, $id_item, $id_topping, $jumlah_pembelian);
+		redirect('laporanPenjualan');
 	}
 
 	/*public function Simpan(){

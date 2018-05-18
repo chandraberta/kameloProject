@@ -22,6 +22,12 @@ class laporanPenjualan_model extends CI_Model{
 		return $this->db->insert('laporan_keuangan',$data);
 	}
 
+	function form_insert($table, $data){
+			//$this->db->set($data);
+			$res = $this->db->insert($table,$data);
+			return $res;
+	}
+
 	public function update($data, $where){
 		//$this->db->query('')
 		$this->db->where($where);
@@ -32,8 +38,16 @@ class laporanPenjualan_model extends CI_Model{
 		return $this->db->delete('laporan_keuangan',$where);
 	}
 
-	public function tambah($tanggal, $id_item, $id_topping, $jumlah){
-		$db = $this->mysqli_conn;
-		$db->query("INSERT INTO laporan_keuangan(tanggal, id_item, id_topping, jumlah_pembelian) VALUES('$tanggal','$id_item','$id_topping','$jumlah')") or die($db->error);
+
+	function simpan_penjualan($tanggal, $id_item, $id_topping, $jumlah_pembelian){
+		$hasil = $this->db->query("INSERT INTO laporan_keuangan(tanggal, id_item, id_topping, jumlah_pembelian) VALUES('$tanggal', '$id_item', '$id_topping', '$jumlah_pembelian')");
 	}
+
+	function update_isi($tanggal, $id_item, $id_topping, $jumlah_pembelian){
+		$hasil=$this->db->query("UPDATE laporan_keuangan SET item=(SELECT item FROM menu WHERE menu.id_item=laporan_keuangan.id_item);");
+	}
+
+	/*public function update_isi($item, $id_item){
+		$hasil=$this->db->query('UPDATE laporan_keuangan SET item=(SELECT item FROM menu WHERE menu.id_item=laporan_keuangan.id_item);')
+	}*/
 }

@@ -40,7 +40,6 @@
                   <td><?php echo $d['jumlah_pembelian'];?></td>
                   <td><?php echo $d['total_pembelian'];?></td>
                   <td>
-                  <a href="<?php echo site_url('laporanPenjual');?>" class="btn btn-primary pull-left">Terima</a>
                   <a href="<?php echo site_url('laporanPenjualan/hapus/'.$d['tanggal']);?>"
                   class="btn btn-danger">Hapus</a>
 
@@ -61,7 +60,7 @@
                   <h4 class="modal-title">Tambah Laporan Offline</h4>
               </div>
 
-              <form method="post" action="laporanPenjualan" enctype="multipart/form-data">
+              <form method="post" action="laporanPenjualan/form" enctype="multipart/form-data">
                   <div class="modal-body">
                       <div class="form-group">
                           <label class="control-label" for="tanggal">Tanggal</label>
