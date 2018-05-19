@@ -7,8 +7,9 @@ class statPenjualan extends CI_Controller{
 		parent::__construct();
 		$this->load->helper('url');
 
-		//if($this->session->userdata('status') != "login"){
-		//	redirect(base_url('login'));
+		if($this->session->userdata('status') != "login"){
+			redirect(base_url('login'));
+		}
 
 
 		$this->load->model('statPenjualan_model');

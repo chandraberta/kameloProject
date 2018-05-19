@@ -51,6 +51,7 @@ class Admin extends CI_Controller {
 	}
 
 	public function logout(){
+		$this->session->unset_userdata('status');
 		$this->session->sess_destroy();
 		redirect(base_url('login'));
 }

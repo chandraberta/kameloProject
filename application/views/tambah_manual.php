@@ -1,4 +1,6 @@
 <head>
+  <meta charset="utf-8">
+  <title>tambah manual</title>
   <link rel="shortcut icon" href="assets/img/favicon.png">
   <!-- Bootstrap core CSS-->
   <link href="<?php echo base_url('assets/admin/vendor/bootstrap/css/bootstrap.min.css')?>" rel="stylesheet">
@@ -9,58 +11,7 @@
 </head>
 
 <body>
-<h1>Laporan Penjualan</h1>
-
-<div class="col-md-12">
-</div>
-
-<div class="card mb-3">
-        <div class="card-header">
-          <i class="fa fa-table"></i></div>
-        <div class="card-body">
-          <div class="table-responsive">
-            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <th>Tanggal</th>
-                  <th>Item</th>
-                  <th>Topping</th>
-                  <th>Jumlah Pembelian</th>
-                  <th>Total Pembelian</th>
-                  <th>Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                <?php $n=0;
-              foreach ($semua->result_array() as $d) {
-                $n++;?>
-                <tr>
-                  <!--<td><?php echo $n;?></td>-->
-                  <td><?php echo $d['tanggal'];?></td>
-                  <td><?php echo $d['item'];?></td>
-                  <td><?php echo $d['topping'];?></td>
-                  <td><?php echo $d['jumlah_pembelian'];?></td>
-                  <td><?php echo $d['total_pembelian'];?></td>
-                  <td>
-                  <a href="<?php echo site_url('laporanPenjualan/hapus/'.$d['id']);?>"
-                  class="btn btn-danger">Hapus</a>
-
-                </td>
-                </tr>
-                <?php } ?>
-              </tbody>
-      </table>
-    </div>
-
-
-    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#tambah">Tambah Data</button>
-    <div id="tambah" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal"></button>
-                  <h4 class="modal-title">Tambah Laporan Offline</h4>
-              </div>
-
-              <form method="post" action="laporanPenjualan/form" enctype="multipart/form-data">
+<form method="post" enctype="multipart/form-data">
                   <div class="modal-body">
                       <div class="form-group">
                           <label class="control-label" for="tanggal">Tanggal</label>
@@ -79,7 +30,7 @@
                       </div>
                       <div class="form-group">
                           <label class="control-label" for="topping">Topping</label>
-                          <select name="id_topping" class="form-control" name="topping" id="id_topping" >
+                          <select name="id_topping" class="form-control" name="topping" id="id_topping">
                             <option value="1">Tanpa topping</option>
                             <option value="2">Oreo</option>
                             <option value="3">Chacha</option>
@@ -92,7 +43,7 @@
                       </div>
                       <div class="form-group">
                           <label class="control-label" for="jumlah">Jumlah</label>
-                          <input type="number" name="jumlah_pembelian" class="form-control" required>
+                          <input type="number" name="jumlah" class="form-control" id="jumlah" required>
                       </div>
                   </div>
                   <div  class="modal-footer">
@@ -100,13 +51,7 @@
                       <input type="submit" class="btn btn-success" name="tambah" value="simpan">
                   </div>
               </form>
-          </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Bootstrap core JavaScript-->
+              <!-- Bootstrap core JavaScript-->
     <script src="<?php echo base_url('assets/vendor/jquery/jquery.min.js')?>"></script>
     <script src="<?php echo base_url('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')?>"></script>
     <!-- Core plugin JavaScript-->
@@ -115,4 +60,5 @@
     <script src="<?php echo base_url('assets/js/sb-admin.min.js')?>"></script>
     <script type="<?php echo base_url('assets/js/toggle.js')?>"></script>
   
-  </body>
+
+              </body>

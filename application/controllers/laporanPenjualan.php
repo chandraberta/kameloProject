@@ -7,8 +7,9 @@ class laporanPenjualan extends CI_Controller{
 		parent::__construct();
 		$this->load->helper('url');
 
-		/*if($this->session->userdata('status') != "login"){
-			redirect(base_url('login'));*/
+		if($this->session->userdata('status') != "login"){
+			redirect(base_url('login'));
+		}
 
 
 		$this->load->model('laporanPenjualan_model');
@@ -30,45 +31,75 @@ class laporanPenjualan extends CI_Controller{
 	}
 
 	public function form(){
-		if($this->input->post('simpan')){
-			$array = array('nama_produk'=>$this->input->post('nama_produk'),
-							'brand'=>$this->input->post('brand'),
-							'deskripsi'=>$this->input->post('deskripsi'),
-							'barcode'=>$this->input->post('barcode'),
-							'harga'=>$this->input->post('harga'),
-						);
+			$data = array(
+                'tanggal'=>$this->input->post('tanggal'),
+                'id_item'=>$this->input->post('id_item'),
+                'id_topping'=>$this->input->post('id_topping'),
+                'jumlah_pembelian'=>$this->input->post('jumlah_pembelian')
+              );
 
-			if($this->input->post('id')==''){
-				if($this->produkModel->insert($array)){
+      $result = $this->laporanPenjualan_model->form_insert('preorder',$data);
+      if($result >= 1)
+      {
+        redirect(base_url('laporanPenjualan'));
+      }
+
+	}
+
+	public function hapus(){
+			if($this->uri->segment(3)) $this->laporanPenjualan_model->delete(array('id'=>$this->uri->segment(3)));
+			redirect('laporanPenjualan');
+		}
+
+	public function tambah_manual(){
+		$this->load->view('tambah_manual');
+	}
+
+	public function simpan_penjualan(){
+		$tanggal=$this->input->post('tanggal');
+		$id_item=$this->input->post('id_item');
+		$id_topping=$this->input->post('id_post');
+		$jumlah_pembelian=$this->input->post('jumlah_pembelian');
+		$this->laporanPenjualan_model->simpan_penjualan($tanggal, $id_item, $id_topping, $jumlah_pembelian);
+		redirect('laporanPenjualan');
+	}
+
+	function update_item(){
+		$data['semua'] = $this->laporanPenjualan_model->update_item();
+	}
+
+	/*public function Simpan(){
+		$manual = array(
+			'tanggal'	=>$this->input->post('tanggal'),
+			'id_item'		=>$this->input->post('id_item'),
+			'id_topping'	=>$this->input->post('id_topping'),
+			'jumlah'	=>$this->input->post('jumlah')
+		);
+		var_dump($manual);
+		$this->laporanPenjualan_model->simpan($manual);
+		$this->index();
+
+		if($this->input->post('tanggal')==''){
+				if($this->laporanPenjualan_model->insert($manual)){
 					?>
 					<script>window.alert('Sukses Tersimpan');</script>
 					<?php
-					redirect('produk','refresh');
+					redirect('laporanPenjualan','refresh');
 				}else{
 					$this->alert = $this->alert("<p class='alert alert-danger'>","</p>","Gagal Menyimpan");
 				}
 
 				}else{
-					if($this->produkModel->update($array,array('id_produk'=>$this->input->post('id')))){
+					if($this->laporanPenjualan_model->update($manual,array('tanggal'=>$this->input->post('tanggal')))){
 					?>
 						<script>window.alert('Sukses Tersimpan');</script>data
 						<?php 
-						redirect('produk','refresh');
+						redirect('laporanPenjualan','refresh');
 
 					} else{
 						$this->alert = $this->alert("<p class='alert alert-danger'>","</p","Gagal Menyimpan");
 				}
 			}
 
-		}
-		$data['venus'] = $this->produkModel->getWhere(array('id_produk'=>$this->uri->segment(3)))->row_array();
-
-		$data['alert'] = $this->alert;
-		$this->template('form',$data);
-
-		}
-	public function hapus(){
-			if($this->uri->segment(3)) $this->laporanPenjualan_model->delete(array('tanggal'=>$this->uri->segment(3)));
-			redirect('laporanPenjualan');
-		}
+	}*/
 }

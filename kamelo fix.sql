@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 14, 2018 at 07:36 PM
+-- Generation Time: May 19, 2018 at 03:37 AM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 7.2.4
 
@@ -25,22 +25,30 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `admin`
+-- Table structure for table `deorder`
 --
 
-CREATE TABLE `admin` (
-  `id` int(11) NOT NULL,
-  `username` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL
+CREATE TABLE `deorder` (
+  `id_order` int(11) NOT NULL,
+  `nama_cust` varchar(255) NOT NULL,
+  `id_item` int(11) NOT NULL,
+  `item` varchar(255) NOT NULL,
+  `id_topping` int(11) NOT NULL,
+  `topping` varchar(255) NOT NULL,
+  `no_hp` varchar(14) NOT NULL,
+  `jumlah` int(11) NOT NULL,
+  `total_harga` int(11) NOT NULL,
+  `alamat` varchar(255) NOT NULL,
+  `tanggal` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `admin`
+-- Dumping data for table `deorder`
 --
 
-INSERT INTO `admin` (`id`, `username`, `password`) VALUES
-(1, 'malasngoding', '10406c1d7b7421b1a56f0d951e952a95'),
-(2, 'admin', '0192023A7BBD73250516F069DF18B500');
+INSERT INTO `deorder` (`id_order`, `nama_cust`, `id_item`, `item`, `id_topping`, `topping`, `no_hp`, `jumlah`, `total_harga`, `alamat`, `tanggal`) VALUES
+(1, 'Berta', 2, 'Marshmellow Ice Cream Strawberry Delight', 4, 'koko crunch', '085649026764', 3, 0, 'Jalan K.H. Ahmad Dahlan 64', NULL),
+(2, 'Meli', 2, 'Marshmellow Ice Cream Strawberry Delight', 4, 'koko crunch', '08500000000', 3, 0, 'Jalan di Kediri', NULL);
 
 -- --------------------------------------------------------
 
@@ -55,15 +63,30 @@ CREATE TABLE `laporan_keuangan` (
   `id_topping` int(11) DEFAULT NULL,
   `topping` varchar(255) DEFAULT NULL,
   `jumlah_pembelian` int(11) DEFAULT NULL,
-  `total_pembelian` int(11) DEFAULT NULL
+  `total_pembelian` int(11) DEFAULT NULL,
+  `id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `laporan_keuangan`
 --
 
-INSERT INTO `laporan_keuangan` (`tanggal`, `id_item`, `item`, `id_topping`, `topping`, `jumlah_pembelian`, `total_pembelian`) VALUES
-('2018-05-15', 4, 'Soft Ice Cream Milo', 5, 'choco chips', NULL, NULL);
+INSERT INTO `laporan_keuangan` (`tanggal`, `id_item`, `item`, `id_topping`, `topping`, `jumlah_pembelian`, `total_pembelian`, `id`) VALUES
+('2018-05-09', 2, 'Marshmellow Ice Cream Strawberry Delight', 5, 'choco chips', 4, 28000, 1),
+('2018-05-10', 6, 'Soft Ice Cream Green Tea', 8, 'hello panda', 2, 10000, 2),
+('2018-05-11', 3, 'Soft Ice Cream Oreo', 4, 'koko crunch', 10, 50000, 3),
+('2018-05-26', 5, 'Soft Ice Cream Strawberry', 5, 'choco chips', 5, 25000, 4),
+('2018-05-09', 6, 'Soft Ice Cream Green Tea', 5, 'choco chips', 9, 45000, 5),
+('2018-05-16', 1, 'Marshmellow Ice Cream Classic Choco', 4, 'koko crunch', 3, 21000, 6),
+('2018-05-19', 4, 'Soft Ice Cream Milo', 3, 'chacha', 3, 15000, 8),
+('2018-05-17', 1, 'Marshmellow Ice Cream Classic Choco', 2, 'Oreo', 9, 63000, 9),
+('2018-05-16', 5, 'Soft Ice Cream Strawberry', 6, 'yuppy', 5, 25000, 10),
+('2018-05-24', 4, 'Soft Ice Cream Milo', 5, 'choco chips', 11, 55000, 11),
+('2018-05-14', 6, 'Soft Ice Cream Green Tea', 2, 'Oreo', 3, 15000, 12),
+('2018-05-23', 4, 'Soft Ice Cream Milo', 4, 'koko crunch', 14, 70000, 27),
+(NULL, 2, 'Marshmellow Ice Cream Strawberry Delight', 4, 'koko crunch', 3, 21000, 28),
+(NULL, 2, 'Marshmellow Ice Cream Strawberry Delight', 4, 'koko crunch', 3, 21000, 29),
+(NULL, 5, 'Soft Ice Cream Strawberry', 2, 'Oreo', 5, 25000, 30);
 
 -- --------------------------------------------------------
 
@@ -103,17 +126,29 @@ CREATE TABLE `preorder` (
   `jumlah` int(4) NOT NULL,
   `no_hp` varchar(14) NOT NULL,
   `id_item` int(11) DEFAULT NULL,
-  `id_topping` int(11) DEFAULT NULL
+  `id_topping` int(11) DEFAULT NULL,
+  `tanggal` date DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_user`
+--
+
+CREATE TABLE `tb_user` (
+  `id_user` varchar(50) NOT NULL,
+  `nama_user` varchar(80) NOT NULL,
+  `username` varchar(40) NOT NULL,
+  `password` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `preorder`
+-- Dumping data for table `tb_user`
 --
 
-INSERT INTO `preorder` (`id_order`, `nama_cust`, `item`, `topping`, `jumlah`, `no_hp`, `id_item`, `id_topping`) VALUES
-(1, 'Berta', 'Soft Ice Cream Green Tea', 'Oreo', 1, '085649026764', 6, 2),
-(2, 'Meli', 'Soft Ice Cream Strawberry', 'koko crunch', 2, '0865656565665', 5, 4),
-(3, 'Chandra', 'Marshmellow Ice Cream Classic Choco', 'Tanpa topping', 2, '', 1, 1);
+INSERT INTO `tb_user` (`id_user`, `nama_user`, `username`, `password`) VALUES
+('b8683d3e-5a69-11e8-b97a-54ab3ab4ad0f', 'Berta Kartika Chandra', 'admin', 'd033e22ae348aeb5660fc2140aec35850c4da997');
 
 -- --------------------------------------------------------
 
@@ -146,15 +181,16 @@ INSERT INTO `topping` (`id_topping`, `n_topping`, `harga`) VALUES
 --
 
 --
--- Indexes for table `admin`
+-- Indexes for table `deorder`
 --
-ALTER TABLE `admin`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE `deorder`
+  ADD PRIMARY KEY (`id_order`);
 
 --
 -- Indexes for table `laporan_keuangan`
 --
 ALTER TABLE `laporan_keuangan`
+  ADD PRIMARY KEY (`id`),
   ADD KEY `id_item` (`id_item`),
   ADD KEY `id_topping` (`id_topping`);
 
@@ -173,6 +209,12 @@ ALTER TABLE `preorder`
   ADD KEY `id_topping` (`id_topping`);
 
 --
+-- Indexes for table `tb_user`
+--
+ALTER TABLE `tb_user`
+  ADD PRIMARY KEY (`id_user`);
+
+--
 -- Indexes for table `topping`
 --
 ALTER TABLE `topping`
@@ -183,10 +225,16 @@ ALTER TABLE `topping`
 --
 
 --
--- AUTO_INCREMENT for table `admin`
+-- AUTO_INCREMENT for table `deorder`
 --
-ALTER TABLE `admin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+ALTER TABLE `deorder`
+  MODIFY `id_order` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `laporan_keuangan`
+--
+ALTER TABLE `laporan_keuangan`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT for table `menu`
@@ -198,7 +246,7 @@ ALTER TABLE `menu`
 -- AUTO_INCREMENT for table `preorder`
 --
 ALTER TABLE `preorder`
-  MODIFY `id_order` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_order` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `topping`

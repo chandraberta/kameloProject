@@ -34,7 +34,7 @@
                   <td><?php echo $d['no_hp'];?></td>
                   <td><?php echo $d['alamat'];?></td>
                   <td>
-                  <a href="<?php echo site_url('deorder');?>" class="btn btn-primary pull-left">Terima</a>
+                  <a href="<?php echo site_url('deorder/terima/'.$d['id_order']);?>" class="btn btn-primary pull-left">Terima</a>
                   <a href="<?php echo site_url('deorder/hapus/'.$d['id_order']);?>"
                   class="btn btn-danger">Hapus</a>
 
@@ -44,7 +44,6 @@
               </tbody>
   </table>
 </div>
-<a href="<?php echo site_url('preorder');?>" class="btn btn-success pull-left">Tambah</a>
     </div>
 </div></div>
   

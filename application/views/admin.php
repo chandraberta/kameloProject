@@ -40,7 +40,7 @@
               </div>
               <div class="mr-5">Laporan Penjualan</div>
             </div>
-            <a class="card-footer text-white clearfix small z-1" href="<?php echo site_url('deorder');?>">
+            <a class="card-footer text-white clearfix small z-1" href="<?php echo site_url('laporanPenjualan');?>">
               <span class="float-left">View Details</span>
               <span class="float-right">
                 <i class="fa fa-angle-right"></i>
@@ -70,9 +70,9 @@
               <div class="card-body-icon">
                 <i class="fa fa-fw fa-comments"></i>
               </div>
-              <div class="mr-5">Pre-Order</div>
+              <div class="mr-5">Statistika Penjualan</div>
             </div>
-            <a class="card-footer text-white clearfix small z-1" href="<?php echo site_url('deorder');?>">
+            <a class="card-footer text-white clearfix small z-1" href="<?php echo site_url('statPenjualan');?>">
               <span class="float-left">View Details</span>
               <span class="float-right">
                 <i class="fa fa-angle-right"></i>
