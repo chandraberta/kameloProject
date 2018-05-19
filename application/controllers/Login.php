@@ -58,7 +58,7 @@ class Login extends CI_Controller{
  
       $data_session = array(
         'nama' => $username,
-        'status' => "login"
+        'status' => "login",
         );
  
       $this->session->set_userdata($data_session);
@@ -66,11 +66,13 @@ class Login extends CI_Controller{
       redirect(base_url("admin"));
  
     }else{
-      echo "Username dan password salah !";
+      $this->session->set_flashdata('pesan', 'login gagal');
+      redirect(base_url('login'));
     }
   }
 
   function logout(){
+    $this->session->unset_userdata('status');
     $this->session->sess_destroy();
     redirect('login');
   }

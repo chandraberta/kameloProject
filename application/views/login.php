@@ -15,11 +15,19 @@
   <link href="<?php echo base_url('assets/vendor/font-awesome/css/font-awesome.min.css');?>" rel="stylesheet" type="text/css">
   <!-- Custom styles for this template-->
   <link href="<?php echo base_url('assets/css/sb-admin.css');?>" rel="stylesheet">
+  <style type="text/css" media="screen">
+    #failedMessage{
+  padding:10px;
+  background-color:red;
+  color:white;
+  font-size:15px;
+}
+  </style>
 </head>
 
 <body class="bg-dark">
   <div class="container">
-    <div class="card card-login mx-auto mt-5">
+    <div class="card card-login mx-auto mt-5"> 
       <div class="card-header">Login</div>
       <div class="card-body">
         <form action="<?php echo base_url('Login/aksi_login'); ?>" method="post"">
