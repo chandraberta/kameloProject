@@ -69,7 +69,7 @@ class laporanPenjualan extends CI_Controller{
 	}
 
 	/*public function Simpan(){
-		$manual = array(
+		$manual = array(bcb
 			'tanggal'	=>$this->input->post('tanggal'),
 			'id_item'		=>$this->input->post('id_item'),
 			'id_topping'	=>$this->input->post('id_topping'),
