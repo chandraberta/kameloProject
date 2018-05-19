@@ -539,18 +539,18 @@
 
 
             <!-- Events Section -->
-            <section id="events" class="events">
+            <!-- <section id="events" class="events">
                 <div class="container">
                     <header class="text-center">
                         <h2>Promo</h2>
                         <h3>Jangan lewatkan promo kami</h3>
                     </header>
-<?php                foreach ($data as $data) { ?>
+                    <?php $this->load->view('beli',$promo);?>
                     <div class="row">
                         <!-- Profile Side  -->
                         <div class="col-sm-6">
 
-                            <div class="profile has-border" style="background-image: url('assets/img/<?php echo $data['gambar'];?>');" >
+                            <div class="profile has-border" style="background-image: url('assets/img/<?php echo $promo['gambar'];?>');" >
 
                                   <a href="assets/img/event-bg.png" data-lightbox="image-1" data-title="Image Caption" class="has-border" width="150">
                                       <span class="icon-search"></span>
@@ -558,22 +558,22 @@
 
                             </div>
                         </div>
-
+                        <?php $this->load->view('beli',$promo);?>
                         <!-- Details Side  -->
                         <div class="col-sm-6">
                             <div class="details">
-                                <h3><?php echo $data['judul'];?></h3>
-                                <h4 class="text-primary"><?php echo $data['tanggal']; ?> </h4>
+                                <h3><?php echo $promo['judul'];?></h3>
+                                <h4 class="text-primary"><?php echo $promo['tanggal']; ?> </h4>
                                 <p class="lead">
-                                  <?php echo $data['deskripsi'];?>
+                                  <?php echo $promo['deskripsi'];?>
                                 </p>
 
                             </div>
                         </div>
-                        <?php }; ?>
+
                     </div>
                 </div>
-            </section>
+            </section> -->
             <!-- End Events Section -->
 
 

@@ -28,4 +28,24 @@ class statPenjualan_model extends CI_Model{
 	public function delete($where){
 		return $this->db->delete('preorder',$where);
 	}
+
+	public function get(){
+			$this->load->database();
+			$query =$this->db->query('select*from comment order by `id` DESC');
+			return $query->result();
+
+	}
+
+function report(){
+			 $this->load->database();
+			$query = $this->db->query("SELECT item as menu, jumlah_pembelian
+			FROM laporan_keuangan
+			;");
+			if($query->num_rows() > 0){
+					foreach($query->result() as $data){
+							$hasil[] = $data;
+					}
+					return $hasil;
+	}
+}
 }

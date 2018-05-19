@@ -29,14 +29,14 @@ class deorder_model extends CI_Model{
 		return $this->db->delete('deorder',$where);
 	}
 
-<<<<<<< HEAD
+
 	function form_insert($table, $data){
 			//$this->db->set($data);
 			$res = $this->db->insert($table,$data);
 			return $res;
 	}
-}
-=======
+
+
 	public function terima($where){
 		$mana = $this->db->where($where);
 		$res = $this->db->query('INSERT INTO laporan_keuangan(tanggal, id_item, id_topping, jumlah_pembelian) SELECT tanggal, id_item, id_topping, jumlah FROM deorder WHERE id_order', $mana);
@@ -47,4 +47,3 @@ class deorder_model extends CI_Model{
 		return $res;
 	}
 }
->>>>>>> 002b45b85c1bd594e40be0839ec618b08ff9bd19

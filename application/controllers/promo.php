@@ -24,6 +24,11 @@ class Promo extends CI_Controller{
 		return $data;
 	}
 
+	function promo(){
+	  $promo = $this->promo_model->getPromo(); //array of members
+	  return $promo;
+	}
+
 	public function form(){
 		// if($this->input->post('submit')){
 
@@ -54,7 +59,7 @@ class Promo extends CI_Controller{
 
 					);
 
-		$result = $this->promo_model->form_insert('promo',$data);
+		$result = $this->promo_model->form_update('promo',$data);
 		if($result >= 1)
 		{
 			redirect('promo');
@@ -69,7 +74,7 @@ class Promo extends CI_Controller{
 		$this->template('form',$data);
 
 		}
-	
+
 
 	public function hapus(){
 			if($this->uri->segment(3)) $this->promo_model->delete(array('id_order'=>$this->uri->segment(3)));

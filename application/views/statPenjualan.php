@@ -1,41 +1,109 @@
+<!-- load library jquery dan highcharts -->
+<script src="<?php echo base_url();?>assets/js/jquery.js"></script>
+<script src="<?php echo base_url();?>assets/js/highcharts.js"></script>
+<!-- end load library -->
 <h1>Statistik Penjualan</h1>
 
 <div class="col-md-12">
-  <h2 align="center">Tabel Produk</h2><br>
+  <h2 align="center">Statistik Pembelian Produk</h2><br>
 </div>
 
-<div class="col-md-12">
-  <table class="table table-stripped">
-    <tr>
-                  <th>No order</th>
-                  <th>Nama Customer</th>
-                  <th>Item</th>
-                  <th>Topping</th>
-                  <th>Jumlah</th>
-                  <th>No HP</th>
-                  <th>Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                <?php $n=0;
-              foreach ($semua->result_array() as $d) {
-                $n++;?>
-                <tr>
-                  <td><?php echo $n;?></td>
-                  <td><?php echo $d['nama_cust'];?></td>
-                  <td><?php echo $d['item'];?></td>
-                  <td><?php echo $d['topping'];?></td>
-                  <td><?php echo $d['jumlah'];?></td>
-                  <td><?php echo $d['no_hp'];?></td>
-                  <td>
-                  <a href="<?php echo site_url('preorder');?>" class="btn btn-primary pull-left">Terima</a>
-                  <a href="<?php echo site_url('preorder/hapus/'.$d['id_order']);?>"
-                  class="btn btn-danger">Hapus</a>
 
-                </td>
-                </tr>
-                <?php } ?>
-              </tbody>
-  </table>
-  <a href="<?php echo site_url('preorder');?>" class="btn btn-primary pull-left">Tambah</a>
-    </div>
+
+<?php
+    /* Mengambil query report*/
+    foreach($report as $result){
+        $bulann = array(
+                '1' => 'Marshmellow Ice Cream Classic Choco',
+                '2' => 'Marshmellow Ice Cream Strawberry Delight',
+                '3' => 'Soft Ice Cream Oreo',
+                '4' => 'Soft Ice Cream Milo',
+                '5' => 'Soft Ice Cream Strawberry',
+                '6' => 'Soft Ice Cream Green Tea',
+
+        );
+
+		$bulan[] = $bulann[$result->bulan]; //ambil bulan
+        $value[] = (float) $result->nilai; //ambil nilai
+    }
+    /* end mengambil query*/
+
+?>
+
+<!-- Load chart dengan menggunakan ID -->
+<div id="report"></div>
+<!-- END load chart -->
+
+<!-- Script untuk memanggil library Highcharts -->
+<script type="text/javascript">
+$(function () {
+    $('#report').highcharts({
+        chart: {
+            type: 'column',
+            margin: 75,
+            options3d: {
+                enabled: false,
+                alpha: 10,
+                beta: 25,
+                depth: 70
+            }
+        },
+        title: {
+            text: 'Statistik Jumlah Pembelian',
+            style: {
+                    fontSize: '18px',
+                    fontFamily: 'Verdana, sans-serif'
+            }
+        },
+        subtitle: {
+           text: 'berdasar Menu',
+           style: {
+                    fontSize: '15px',
+                    fontFamily: 'Verdana, sans-serif'
+            }
+        },
+        plotOptions: {
+            column: {
+                depth: 25
+            }
+        },
+        credits: {
+            enabled: false
+        },
+        xAxis: {
+            categories:  <?php echo json_encode($bulan);?>
+        },
+        exporting: {
+            enabled: false
+        },
+        yAxis: {
+            title: {
+                text: 'Jumlah'
+            },
+        },
+        tooltip: {
+             formatter: function() {
+                 return 'Pembelian menu <b>' + this.x + '</b> adalah <b>' + Highcharts.numberFormat(this.y,0) + '</b>, di '+ this.series.name;
+             }
+          },
+        series: [{
+            name: 'Statistik Data',
+            data: <?php echo json_encode($value);?>,
+            shadow : true,
+            dataLabels: {
+                enabled: true,
+                color: '#045396',
+                align: 'center',
+                formatter: function() {
+                     return Highcharts.numberFormat(this.y, 0);
+                }, // one decimal
+                y: 0, // 10 pixels down from the top
+                style: {
+                    fontSize: '13px',
+                    fontFamily: 'Verdana, sans-serif'
+                }
+            }
+        }]
+    });
+});
+        </script>

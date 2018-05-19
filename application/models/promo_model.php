@@ -8,11 +8,7 @@ class promo_model extends CI_Model{
 	}
 
 	public function all(){
-// <<<<<<< HEAD
 		return $this->db->get('promo');
-// =======
-// 		return $this->db->get('preorder');
-// >>>>>>> 7e0a427e7d1347ba3b49ecb5eaf0d6b9626501c1
 	}
 
 	public function getWhere($where){
@@ -51,10 +47,18 @@ class promo_model extends CI_Model{
 		return $this->db->delete('preorder',$where);
 	}
 
-	function form_insert($table, $data){
+	function form_update($table, $data){
 			//$this->db->set($data);
-			$res = $this->db->insert($table,$data);
+			$res = $this->db->update($table,$data);
 			return $res;
 	}
+
+	public function getPromo($id){
+		$this->db->where($id);
+// <<<<<<< HEAD
+		return $this->db->get('promo');
+	}
+
+
 }
 // >>>>>>> 7e0a427e7d1347ba3b49ecb5eaf0d6b9626501c1

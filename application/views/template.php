@@ -41,18 +41,18 @@
             <span class="nav-link-text">Laporan Penjualan</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+        <!-- <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
           <a class="nav-link" href="<?php echo ('statPenjualan')?>">
             <span class="nav-link-text">statistik Penjualan</span>
           </a>
-        </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+        </li> -->
+        <!-- <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
           <a class="nav-link" href="<?php echo ('promo')?>">
             <span class="nav-link-text">Promo</span>
           </a>
-        </li>
+        </li> -->
       </ul>
-      <ul class="navbar-nav ml-auto">        
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link" data-toggle="modal" data-target="#exampleModal" href="<?php echo base_url('admin/logout');?>">Logout</a>
         </li>
@@ -60,18 +60,18 @@
     </div>
   </nav>
   <div class="content-wrapper">
-    <div class="container-fluid"> 
+    <div class="container-fluid">
       <!-- Breadcrumbs-->
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
           <a href="<?php echo site_url('admin');?>">Dashboard</a>
         </li>
-        
+
       </ol>
-      
+
       <hr>
       <?php echo $content;?>
-      
+
       <!-- Blank div to give the page height to preview the fixed vs. static navbar-->
       <div style="height: 1000px;"></div>
     </div>
