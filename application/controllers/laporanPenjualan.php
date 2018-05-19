@@ -7,8 +7,9 @@ class laporanPenjualan extends CI_Controller{
 		parent::__construct();
 		$this->load->helper('url');
 
-		/*if($this->session->userdata('status') != "login"){
-			redirect(base_url('login'));*/
+		if($this->session->userdata('status') != "login"){
+			redirect(base_url('login'));
+		}
 
 
 		$this->load->model('laporanPenjualan_model');
@@ -37,13 +38,13 @@ class laporanPenjualan extends CI_Controller{
                 'jumlah_pembelian'=>$this->input->post('jumlah_pembelian')
               );
 
-      $result = $this->laporanPenjualan_model->form_insert('laporan_keuangan',$data);
+      $result = $this->laporanPenjualan_model->form_insert('preorder',$data);
       if($result >= 1)
       {
         redirect(base_url('laporanPenjualan'));
       }
 
-		}
+	}
 
 	public function hapus(){
 			if($this->uri->segment(3)) $this->laporanPenjualan_model->delete(array('id'=>$this->uri->segment(3)));

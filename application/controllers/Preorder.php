@@ -7,8 +7,9 @@ class preorder extends CI_Controller{
 		parent::__construct();
 		$this->load->helper('url');
 
-		//if($this->session->userdata('status') != "login"){
-		//	redirect(base_url('login'));
+		if($this->session->userdata('status') != "login"){
+			redirect(base_url('login'));
+		}
 
 
 		$this->load->model('preorder_model');
@@ -39,7 +40,16 @@ class preorder extends CI_Controller{
 							'tanggal'=>$this->input->post('tanggal'),
 						);
 
-			if($this->input->post('id')==''){
+			$result = $this->preorder_model->form_insert('laporan_keuangan',$data);
+      if($result >= 1)
+      {
+        redirect(base_url('laporanPenjualan'));
+      }
+    }
+  }
+
+
+			/*if($this->input->post('id')==''){
 				if($this->preorder_model->insert($array)){
 					?>
 					<script>window.alert('Sukses Tersimpan');</script>
@@ -65,11 +75,16 @@ class preorder extends CI_Controller{
 		$data['venus'] = $this->preorder_model->getWhere(array('id_order'=>$this->uri->segment(3)))->row_array();
 
 		$data['alert'] = $this->alert;
-		$this->template('produk',$data);
+		$this->template('produk',$data);*/
 
-		}
 	public function hapus(){
 			if($this->uri->segment(3)) $this->preorder_model->delete(array('id_order'=>$this->uri->segment(3)));
 			redirect('preorder');
 		}
+
+	public function terima(){
+		if($this->uri->segment(3)) $this->preorder_model->terima(array('id_order'=>$this->uri->segment(3)));
+			redirect('preorder');
+	}
 }
+?>

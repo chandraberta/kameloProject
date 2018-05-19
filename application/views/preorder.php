@@ -33,7 +33,7 @@
                   <td><?php echo $d['jumlah'];?></td>
                   <td><?php echo $d['no_hp'];?></td>
                   <td>
-                  <a href="<?php echo site_url('preorder');?>" class="btn btn-primary pull-left">Terima</a>
+                  <a href="<?php echo site_url('preorder/terima/'.$d['id_order']);?>" class="btn btn-primary pull-left">Terima</a>
                   <a href="<?php echo site_url('preorder/hapus/'.$d['id_order']);?>"
                   class="btn btn-danger">Hapus</a>
 

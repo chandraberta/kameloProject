@@ -6,10 +6,12 @@ class Deorder extends CI_Controller{
 		parent::__construct();
 		$this->load->helper('url');
 
-		/*if($this->session->userdata('status') != "login"){
-			redirect(base_url('login'));*/
+		if($this->session->userdata('status') != "login"){
+			redirect(base_url('login'));
+		}
 
 		$this->load->model('deorder_model');
+
 	}
 
 	public function index(){
@@ -69,4 +71,9 @@ class Deorder extends CI_Controller{
 			if($this->uri->segment(3)) $this->deorder_model->delete(array('id_order'=>$this->uri->segment(3)));
 			redirect('deorder');
 		}
+
+	public function terima(){
+		if($this->uri->segment(3)) $this->deorder_model->terima(array('id_order'=>$this->uri->segment(3)));
+			redirect('deorder');
+	}
 }
