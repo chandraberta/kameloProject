@@ -25,43 +25,52 @@ class Promo extends CI_Controller{
 	}
 
 	public function form(){
-		if($this->input->post('simpan')){
-			$array = array('nama_produk'=>$this->input->post('nama_produk'),
-							'brand'=>$this->input->post('brand'),
-							'deskripsi'=>$this->input->post('deskripsi'),
-							'barcode'=>$this->input->post('barcode'),
-							'harga'=>$this->input->post('harga'),
-						);
+		// if($this->input->post('submit')){
 
-			if($this->input->post('id')==''){
-				if($this->produkModel->insert($array)){
-					?>
-					<script>window.alert('Sukses Tersimpan');</script>
-					<?php
-					redirect('produk','refresh');
-				}else{
-					$this->alert = $this->alert("<p class='alert alert-danger'>","</p>","Gagal Menyimpan");
-				}
+            //Check whether user upload picture
+            if(!empty($_FILES['picture']['name'])){
+                $config['upload_path'] = 'assets/img/upload/';
+                $config['allowed_types'] = 'jpg|jpeg|png|gif';
+                $config['file_name'] = $_FILES['gambar']['name'];
 
-				}else{
-					if($this->produkModel->update($array,array('id_produk'=>$this->input->post('id')))){
-					?>
-						<script>window.alert('Sukses Tersimpan');</script>data
-						<?php
-						redirect('produk','refresh');
+                //Load upload library and initialize configuration
+                $this->load->library('upload',$config);
+                $this->upload->initialize($config);
 
-					} else{
-						$this->alert = $this->alert("<p class='alert alert-danger'>","</p","Gagal Menyimpan");
-				}
-			}
+                if($this->upload->do_upload('gambar')){
+                    $uploadData = $this->upload->data();
+                    $gambar = $uploadData['file_name'];
+                }else{
+                    $gambar = '';
+                }
+            }else{
+                $gambar = '';
+            }
+		$data = array(
+						'tanggal'=>$this->input->post('tanggal'),
+						'judul'=>$this->input->post('judul'),
+						'deskripsi'=>$this->input->post('deskripsi'),
+						'gambar'=>$gambar
 
+					);
+
+		$result = $this->promo_model->form_insert('promo',$data);
+		if($result >= 1)
+		{
+			redirect('promo');
 		}
-		$data['venus'] = $this->produkModel->getWhere(array('id_produk'=>$this->uri->segment(3)))->row_array();
+
+
+
+
+		//$data['venus'] = $this->produkModel->getWhere(array('id_produk'=>$this->uri->segment(3)))->row_array();
 
 		$data['alert'] = $this->alert;
 		$this->template('form',$data);
 
 		}
+	
+
 	public function hapus(){
 			if($this->uri->segment(3)) $this->promo_model->delete(array('id_order'=>$this->uri->segment(3)));
 			redirect('promo');

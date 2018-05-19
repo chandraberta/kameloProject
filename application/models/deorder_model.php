@@ -28,4 +28,10 @@ class deorder_model extends CI_Model{
 	public function delete($where){
 		return $this->db->delete('deorder',$where);
 	}
+
+	function form_insert($table, $data){
+			//$this->db->set($data);
+			$res = $this->db->insert($table,$data);
+			return $res;
+	}
 }

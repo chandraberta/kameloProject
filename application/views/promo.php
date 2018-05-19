@@ -14,7 +14,7 @@
                           <!-- /.box-header -->
                           <!-- form start -->
 
-                          <form role="form" method="post" enctype="multipart/form-data" action="Promo.php">
+                          <form role="form" method="post" enctype="multipart/form-data" action="Promo/form">
                               <div class="box-body">
 
                                   <?php /*include "model/promo_model" ;
@@ -43,7 +43,7 @@
                                   </div>
                                   <div class="form-group">
                                       <label for="exampleInputFile">File input</label>
-                                      <input type="file" id="user_image" name="user_image">
+                                      <input type="file" id="gambar" name="gambar">
 
                                       <p class="help-block">Example block-level help text here.</p>
                                   </div>
@@ -52,7 +52,7 @@
                               <!-- /.box-body -->
 
                               <div class="box-footer">
-                                  <button type="submit" id="btnsave" name="btnsave" class="btn btn-primary">Submit</button>
+                                  <button type="submit" id="submit" name="submit" class="btn btn-primary">Submit</button>
                               </div>
                           </form>
                       </div>

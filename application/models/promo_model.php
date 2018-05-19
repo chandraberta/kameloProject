@@ -24,7 +24,7 @@ class promo_model extends CI_Model{
 	public function insert($data){
 		return $this->db->insert('promo',$data);
 // =======
-		return $this->db->get('preorder');
+		return $this->db->get('promo');
 	}
 
 	public function insert2($data){
@@ -49,6 +49,12 @@ class promo_model extends CI_Model{
 
 	public function delete2($where){
 		return $this->db->delete('preorder',$where);
+	}
+
+	function form_insert($table, $data){
+			//$this->db->set($data);
+			$res = $this->db->insert($table,$data);
+			return $res;
 	}
 }
 // >>>>>>> 7e0a427e7d1347ba3b49ecb5eaf0d6b9626501c1

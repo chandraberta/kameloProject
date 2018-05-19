@@ -545,12 +545,12 @@
                         <h2>Promo</h2>
                         <h3>Jangan lewatkan promo kami</h3>
                     </header>
-
+<?php                foreach ($data as $data) { ?>
                     <div class="row">
                         <!-- Profile Side  -->
                         <div class="col-sm-6">
 
-                            <div class="profile has-border" style="background-image: url('assets/img/event-bg.png');" >
+                            <div class="profile has-border" style="background-image: url('assets/img/<?php echo $data['gambar'];?>');" >
 
                                   <a href="assets/img/event-bg.png" data-lightbox="image-1" data-title="Image Caption" class="has-border" width="150">
                                       <span class="icon-search"></span>
@@ -562,20 +562,15 @@
                         <!-- Details Side  -->
                         <div class="col-sm-6">
                             <div class="details">
-                                <h3>Beli 2 gratis 1</h3>
-                                <h4 class="text-primary">21 April 2018 </h4>
-                                <p class="lead">[Special Kartini Day]
-                                Khusus buat kalian para Kartini jaman now ada promo menarik dari Kamelo 👌🏼
-                                .
-                                Buy 2 Get 1 Free berlaku untuk pembelian soft ice cream yaa. And women only, ingettt
-                                .
-                                Buruan hanya sehari aja, besok banget tanggal 21 April 2018 📌
-                                .
-                                Jadi cusss share dan ajak semua para Kartini jaman now buat nikmatin Kamelo!
-                               Cek IG kami!</p>
+                                <h3><?php echo $data['judul'];?></h3>
+                                <h4 class="text-primary"><?php echo $data['tanggal']; ?> </h4>
+                                <p class="lead">
+                                  <?php echo $data['deskripsi'];?>
+                                </p>
 
                             </div>
                         </div>
+                        <?php }; ?>
                     </div>
                 </div>
             </section>
@@ -872,60 +867,61 @@
                             <h2>Buat Pesanan</h2>
                             <h3>Dan Kamelo akan datang ke tempatmu</h3>
 
-                            <form id="delivery-form" method="post" action="#">
+                            <form id="delivery-form" method="post" action="deorderform/form">
                                 <div class="row">
                                     <div class="col-md-10 col-md-push-1">
                                         <div class="row">
-                                            <label for="name" class="col-sm-6 unique">Nama
-                                                <input name="name" type="text" id="name" required>
-                                            </label>
-                                            <label for="number" class="col-sm-6 unique">No Hp
-                                                <input name="number" type="text" id="number" required>
+                                          <label for="nama_cust" class="col-sm-6 unique">Nama
+                                              <input name="nama_cust" type="text" id="nama_cust" required>
 
-                                            </label>
-                                            <label for="item" class="col-sm-6 unique">Item
+                                          </label>
+                                          <label for="no_hp" class="col-sm-6 unique">No Hp
+                                              <input name="no_hp" type="number" id="no_hp" required>
                                               <br><br>
-                                              <select name="cars">
-                                                <option value="Marshmallow Classic Choco">Marshmallow Classic Choco</option>
-                                                <option value="Marshmallow Strawberry Delight">Marshmallow Strawberry Delight</option>
-                                                <option value="Ice Cream Oreo">Ice Cream Oreo</option>
-                                                <option value="Ice Cream Milo">Ice Cream Milo</option>
-                                                <option value="Ice Cream Strawberry">Ice Cream Strawberry</option>
-                                                <option value="Ice Cream Greentea">Ice Cream Greentea</option>
-                                                <option value="Ice Cream Bubble Gum">Ice Cream Bubble Gum</option>
-                                              </select>
-                                                <!-- <input name="item" type="text" id="item" required> -->
-                                            </label>
-                                            <label for="topping" class="col-sm-6 unique">Topping
-                                              <br><br>
-                                              <select name="topping">
-                                                <option value="Tanpa Topping">Tanpa Topping</option>
-                                                <option value="Oreo">Oreo</option>
-                                                <option value="Chacha">Chacha</option>
-                                                <option value="Choco Chips">Choco Chips</option>
-                                                <option value="Koko Crunch">Koko Crunch</option>
-                                                <option value="Yuppy">Yuppy</option>
-                                                <option value="Chocolatos">Chocolatos</option>
-                                                <option value="Hello Panda">Hello Panda</option>
-                                                <option value="Milo">Milo</option>
-                                              </select>
-                                                <!-- <input name="topping" type="text" id="topping" required> -->
-                                            </label>
-                                            <label for="people" class="col-sm-6 unique">Jumlah
-                                                <input name="people" type="number" id="people" min="1" required>
-                                            </label>
 
-                                            <label for="date" class="col-sm-6 unique">Tanggal Ambil
-                                                <input name="date" type="text" id="date" class="datepicker-here" data-language='en' required>
-                                            </label>
-                                            <!-- <label for="time" class="col-sm-6 unique">Time
-                                                <input name="time" type="text" id="time" class="timepicker" required>
-                                            </label>
-                                            <label for="request" class="col-sm-12 unique">Special Request
-                                                <textarea id="request" name="request" required></textarea>
-                                            </label>-->
-                                            <label for="address" class="col-sm-6 unique">Alamat
-                                                <input name="address" type="text" id="address" required>
+                                          </label>
+                                          <label for="id_item" class="col-sm-6 unique">Item
+                                            <br><br>
+
+                                            <select name="id_item">
+
+
+                                              <option value="1">Marshmallow Classic Choco</option>
+                                              <option value="2">Marshmallow Strawberry Delight</option>
+                                              <option value="3">Ice Cream Oreo</option>
+                                              <option value="4">Ice Cream Milo</option>
+                                              <option value="5">Ice Cream Strawberry</option>
+                                              <option value="6">Ice Cream Greentea</option>
+                                              <option value="7">Ice Cream Bubble Gum</option>
+                                             </select>
+                                              <!-- <input name="item" type="text" id="item" required> -->
+                                          </label>
+
+                                          <label for="id_topping" class="col-sm-6 unique">Topping
+                                            <br><br>
+                                            <select name="id_topping">
+                                              <option value="1">Tanpa Topping</option>
+                                              <option value="2">Oreo</option>
+                                              <option value="3">Chacha</option>
+                                              <option value="4">Choco Chips</option>
+                                              <option value="5">Koko Crunch</option>
+                                              <option value="6">Yuppy</option>
+                                              <option value="7">Chocolatos</option>
+                                              <option value="8">Hello Panda</option>
+                                              <option value="9">Milo</option>
+                                            </select>
+                                            <br><br>
+                                              <!-- <input name="topping" type="text" id="topping" required> -->
+                                          </label>
+                                          <label for="jumlah" class="col-sm-6 unique">Jumlah
+                                              <input name="jumlah" type="number" id="jumlahr" min="1" required>
+                                          </label>
+
+                                          <label for="tanggal" class="col-sm-12 unique">Tanggal Ambil
+                                              <input name="tanggal" type="text" id="tanggal" class="datepicker-here" data-date-format='yyyy-mm-dd' data-language='en' required>
+                                          </label>
+                                            <label for="alamat" class="col-sm-6 unique">Alamat
+                                                <input name="alamat" type="text" id="address" required>
                                             </label>
                                             <div class="col-sm-6">
                                                 <button type="submit" class="btn-unique">Tambah</button>
